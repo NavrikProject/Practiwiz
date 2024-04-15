@@ -1,0 +1,101 @@
+/* scrollar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* scrollar */
+
+header nav {
+  border-radius: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
+}
+header .navbar-brand img {
+  width: 85%;
+  max-width: 100%;
+}
+header .navbar-nav .nav-link {
+  text-transform: uppercase;
+  color: #464646 !important;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1rem !important;
+}
+header .iugeuirrr .udgehrr {
+  border-right: 1px solid #cdcdcd;
+}
+header .iugeuirrr .udgehrr .fvjhdf_btn:hover {
+  background-color: var(--main-orange-color) !important;
+  border: 2px solid #fff;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+header .iugeuirrr .udgehrr .cdsfsdvnghff .form-control {
+  border-radius: 25px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px rgba(0, 0, 0, 0.26);
+  padding: 0.5rem 3.5rem 0.5rem 1.2rem;
+  transition: 0.3s ease-in-out;
+  font-family: var(--font-family-lato);
+  font-weight: 600;
+}
+header .iugeuirrr .udgehrr .cdsfsdvnghff .form-control::-moz-placeholder {
+  color: #505050 !important;
+  font-weight: 600;
+}
+header .iugeuirrr .udgehrr .cdsfsdvnghff .form-control::placeholder {
+  color: #505050 !important;
+  font-weight: 600;
+}
+header .iugeuirrr .udgehrr .cdsfsdvnghff i {
+  font-size: 1.4rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #505050 !important;
+}
+header .iugeuirrr .udgehrr:last-child {
+  border-right: 0;
+}
+header .fvjhdf_btn {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #505050 !important;
+  padding: 6px 0.8rem !important;
+}
+
+.headeractive nav {
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.headeractive .navbar.mt-3 {
+  margin-top: 0 !important;
+  transition: 0.3s ease-in-out;
+}
+.headeractive .navbar.mx-4 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transition: 0.3s ease-in-out;
+}
+.headeractive .iugeuirrr .udgehrr .cdsfsdvnghff .form-control {
+  padding: 0.5rem 3.8rem 0.5rem 1.5rem;
+  transition: 0.3s ease-in-out;
+}
