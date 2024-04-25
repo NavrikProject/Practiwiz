@@ -107,7 +107,7 @@ function GoogleMap() {
     <div className="dnhghjdfgdfg">
       <iframe
         title="Google Maps"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.387311069464!2d88.34068957382956!3d22.564613033265807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02779ff7e5b9af%3A0x1d1b1884bdbbbd79!2sEden%20Gardens!5e0!3m2!1sen!2sin!4v1709640488272!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.063875055694!2d77.18755731489182!3d28.56784458244348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d86bdb46071%3A0x94ca3faac5c7b753!2sNavrik%20Software%20Solutions!5e0!3m2!1sen!2sin!4v1674540697611!5m2!1sen!2sin"
         width="100%"
         height="100%"
         style={{ border: 0 }}

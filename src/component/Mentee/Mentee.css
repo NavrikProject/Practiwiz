@@ -1,67 +1,4 @@
 /*mentee dashboard start*/
-
-.md-header header {
-  position: relative;
-  z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-}
-
-.md-header header nav {
-  border-radius: 0;
-}
-
-.md-header header .navbar.mx-4 {
-  margin: 0 !important;
-}
-
-.md-header .navbarmenucollapse {
-  justify-content: end;
-}
-
-.md-header .udgehrr .btn {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  position: relative;
-  border: none;
-  box-shadow: 0 4px 10px 2px rgba(238, 108, 41, 0.25);
-}
-
-.md-header .udgehrr .btn i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.4rem;
-}
-
-.md-header .difuhtre_nav button {
-  width: 100%;
-}
-
-.md-header .difuhtre_nav button span {
-  width: 3.2rem;
-  height: 3.2rem;
-  border-radius: 50%;
-  box-shadow: 0 4px 4px 0 rgba(238, 108, 41, 0.25);
-}
-
-.md-header .difuhtre_nav button span i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.6rem;
-  color: var(--main-orange-color);
-}
-
-.md-header .difuhtre_nav button h5 {
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  color: var(--main-light-black-text-color);
-}
-
 .csdegbfraedd {
   background: var(--light-main-background-color);
 }
@@ -171,6 +108,107 @@
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+/*mentor profile settings start*/
+
+.difuhtre_content .mentor-prf-settings h5,
+.hiniertvrer_change_password h5 {
+  color: var(--light-highlighted-text-color);
+}
+
+.ufguirniirtr #ypautosuggestions,
+.ufguirniirtr #yeautosuggestions,
+.ufguirniirtr #amautosuggestions,
+.ufguirniirtr #peautosuggestions {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  transform: translateX(-50%);
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #cdcdcd;
+  border-top: 0;
+  font-family: var(--font-family-lato);
+}
+
+.ufguirniirtr .ypsuggestion,
+.ufguirniirtr .yesuggestion,
+.ufguirniirtr .amsuggestion,
+.ufguirniirtr .pesuggestion {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-family: var(--font-family-lato);
+  border-bottom: 1px solid #cdcdcd;
+  font-weight: 600;
+}
+
+.tagify__dropdown {
+  font-family: var(--font-family-lato);
+}
+
+.mentor-prf-settings #skill-tag tags {
+  display: block;
+  border-radius: 0.25rem;
+  font-family: var(--font-family-lato);
+}
+
+.difuhtre_content .huygrut .deuirr_circle {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: var(--light-orange-background-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ijaihnifrtt #autosuggestions {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1000;
+  background-color: #fff;
+  width: calc(100% - 2.5rem);
+  transform: translateX(-50%);
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #cdcdcd;
+  border-top: 0;
+  font-family: var(--font-family-lato);
+}
+
+.huygrut button:last-child {
+  text-decoration: underline;
+  font-family: var(--font-family-lato);
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.huygrut button:last-child:hover {
+  color: var(--main-orange-color);
+  transition: 0.3s ease-in-out;
+}
+
+.mentor-prf-settings form label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.mentor-prf-settings form textarea {
+  height: 10rem;
+}
+
+.mentor-prf-settings form .form-control {
+  font-family: var(--font-family-lato);
+}
+
+.mentor-prf-settings form .form-control::placeholder {
+  font-family: var(--font-family-lato);
+  font-style: italic;
+}
+
+/*mentor profile settings end*/
 
 /*start mentee page css*/
 /*start mentee page css*/

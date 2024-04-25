@@ -1,13 +1,14 @@
+/*footer start*/
+
 footer {
-  background: var(--light-main-background-color);
+  background: #001237;
 }
 footer p {
-  color: var(--main-light-black-text-color);
+  color: #fff;
   letter-spacing: 0.5px;
-  font-weight: 600;
 }
 footer h4 {
-  color: #000000;
+  color: #fff;
   position: relative;
 }
 footer h4:after {
@@ -21,8 +22,7 @@ footer h4:after {
   bottom: -5px;
 }
 footer .hjgfgfghghgfh .nbffg {
-  color: var(--main-light-black-text-color);
-  font-weight: 600;
+  color: #fff;
   letter-spacing: 0.5px;
   transition: 0.3s ease-in-out;
 }
@@ -50,13 +50,15 @@ footer .hjgfgfghghgfh .nbffg:hover:after {
   width: 80%;
   transition: 0.3s ease-in-out;
 }
+footer .nbffg2 .d-flex {
+  align-items: baseline;
+}
 footer .nbffg2 a i {
   color: var(--main-orange-color);
   font-size: 1.2rem;
 }
 footer .nbffg2 a p {
-  color: var(--main-light-black-text-color);
-  font-weight: 600;
+  color: #fff;
 }
 footer .bghjdfgfdg button {
   width: 2.5rem;
@@ -65,6 +67,13 @@ footer .bghjdfgfdg button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #fff !important;
   border: none;
+  transition: 0.3s ease-in-out;
+}
+footer .bghjdfgfdg button:hover {
+  background: var(--main-orange-color) !important;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  transform: translateY(-5px);
 }
 footer .bghjdfgfdg button i {
   color: var(--main-orange-color);
@@ -72,4 +81,10 @@ footer .bghjdfgfdg button i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.3s ease-in-out;
+}
+footer .bghjdfgfdg button:hover i {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  transform: translate(-50%, -45%) scale(1.2);
 }

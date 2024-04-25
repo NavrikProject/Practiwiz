@@ -1,38 +1,64 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { login } from "../../feature/userSlice";
+import { loginFailure, loginSuccess, loginStart } from "../../redux/userRedux";
+import {
+  showLoadingHandler,
+  hideLoadingHandler,
+} from "../../redux/loadingReducer";
+import "./login.css";
 
-function Login({ setLoginUser }) {
-  const [user, setUser] = useState({
-    email: "",
-    password: "",
+function Login() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    trigger,
+  } = useForm();
+
+  const [type, setType] = useState("member");
+  const [error, setError] = useState("");
+  const [showIcon, setShowIcon] = useState(false);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const [activeState, setActiveState] = useState({
+    mentee: true,
+    mentor: false,
+    jobSeeker: false,
   });
 
-  const dispatch = useDispatch();
+  const loginFormSubmitHandler = async (data) => {
+    setError("");
+    dispatch(showLoadingHandler());
+    try {
+      dispatch(loginStart());
+      const res = await axios.post(
+        "https://practiwiz-backend.azurewebsites.net/api/auth/login",
+        {
+          data: data,
+          type: type,
+        }
+      );
+      dispatch(hideLoadingHandler());
+      if (res.data.success) {
+        dispatch(loginSuccess(res.data.success));
+        navigate(`/`);
+      }
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setUser({
-      ...user,
-      [name]: value,
-    });
+      if (res.data.notFound) {
+        dispatch(loginFailure(res.data.notFound));
+        setError(res.data.notFound);
+      }
+      if (res.data.wrong) {
+        dispatch(loginFailure(res.data.wrong));
+        setError(res.data.wrong);
+      }
+    } catch (error) {
+      return;
+    }
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    axios
-      .post("https://practiwiz-backend.azurewebsites.net/api/auth/login", user)
-      .then((res) => {
-        alert(res.data.message);
-        dispatch(login(res.data.user)); // Dispatch the login action
-        setLoginUser(res.data.user);
-      })
-      .catch((err) => {
-        console.error("Error logging in:", err);
-      });
-  };
-
   return (
     <main>
       <div
@@ -93,7 +119,7 @@ function Login({ setLoginUser }) {
                     <div className="d-flex align-items-center">
                       <i className="fa-solid fa-circle-check"></i>
                       <p className="mb-0">
-                        <a href="/login">Sign Up Now!</a>
+                        <a href="/register">Sign Up Now!</a>
                       </p>
                     </div>
                   </li>
@@ -105,9 +131,58 @@ function Login({ setLoginUser }) {
                 <div className="uherrr_text text-center">
                   <h4>Log in</h4>
                   <p className="mb-0">
-                    Do Not Have An Account? <a href="/login">Sign Up</a>
+                    Do Not Have An Account? <a href="/register">Sign Up</a>
                   </p>
                 </div>
+                <div className="csfvgdtrfs mb-3 position-relative">
+                  <br />
+                  <input
+                    type="radio"
+                    id="mentee1"
+                    name="userType"
+                    defaultChecked
+                    className={activeState.mentee === true ? "active" : " "}
+                    onClick={() => {
+                      setActiveState({ mentee: true });
+                      setType("member");
+                    }}
+                    value="mentee"
+                  />
+                  <label htmlFor="mentee1" className="radio-label">
+                    <span className="radio-border"></span> Mentee{" "}
+                  </label>
+                  <input
+                    type="radio"
+                    id="mentor1"
+                    name="userType"
+                    value="mentor"
+                    className={activeState.mentor === true ? "active" : " "}
+                    onClick={() => {
+                      setActiveState({ mentor: true });
+                      setType("mentor");
+                    }}
+                  />
+                  <label htmlFor="mentor1" className="radio-label">
+                    {" "}
+                    <span className="radio-border"></span> Mentor{" "}
+                  </label>
+                  <input
+                    type="radio"
+                    id="jobSeeker1"
+                    name="userType"
+                    className={activeState.jobSeeker === true ? "active" : " "}
+                    onClick={() => {
+                      setActiveState({ jobSeeker: true });
+                      setType("job-seeker");
+                    }}
+                    value="jobSeeker"
+                    required
+                  />
+                  <label htmlFor="jobSeeker1" className="radio-label">
+                    <span className="radio-border"></span> Job Seeker{" "}
+                  </label>
+                </div>
+
                 <div className="ihduwfr_form_wrapper mt-3">
                   <form>
                     <div className="csfvgdtrfs mb-3 position-relative">
@@ -122,12 +197,22 @@ function Login({ setLoginUser }) {
                         className="form-control"
                         id="exampleInputEmail1"
                         name="email"
-                        value={user.email}
                         placeholder="Email"
-                        onChange={handleChange}
                         required
-                        aria-describedby="emailHelp"
+                        {...register("email", {
+                          required: "Enter an email to login",
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Invalid email address",
+                          },
+                        })}
+                        onKeyUp={() => {
+                          trigger("email");
+                        }}
                       />
+                      {errors.email && (
+                        <span className="errorMsg">{errors.email.message}</span>
+                      )}
                       <i className="fa-solid fa-envelopes-bulk position-absolute"></i>
                     </div>
                     <div className="csfvgdtrfs mb-3 position-relative">
@@ -138,16 +223,32 @@ function Login({ setLoginUser }) {
                         Password
                       </label>
                       <input
-                        type="password"
                         className="form-control"
                         id="exampleInputPassword1"
                         name="password"
-                        value={user.password}
                         placeholder="Password must be at least 8 characters"
-                        onChange={handleChange}
                         required
+                        type={showIcon ? "text" : "password"}
+                        {...register("password", {
+                          required: "Enter a Password to login",
+                        })}
+                        onKeyUp={() => {
+                          trigger("password");
+                        }}
                       />
-                      <i className="fa-solid fa-eye position-absolute"></i>
+                      <i
+                        onClick={() => setShowIcon(!showIcon)}
+                        className={
+                          showIcon
+                            ? "fa-solid fa-eye position-absolute"
+                            : "fa-solid fa-eye-slash position-absolute"
+                        }
+                      ></i>
+                      {errors.password && (
+                        <span className="errorMsg">
+                          {errors.password.message}
+                        </span>
+                      )}
                     </div>
                     <a href="/login" className="uidherrrr_anchor">
                       Forget password?
@@ -155,10 +256,11 @@ function Login({ setLoginUser }) {
                     <button
                       type="submit"
                       className="btn btn-main py-3 mt-4"
-                      onClick={handleSubmit}
+                      onClick={handleSubmit(loginFormSubmitHandler)}
                     >
                       Log in
                     </button>
+                    {error ? <p className="res-errorlog">{error}</p> : null}
                     <div className="dieyhr_iuhfiderr mt-4">
                       <div className="d-flex align-items-center">
                         <div className="btn btn-main">

@@ -2204,9 +2204,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact; /* Define the standard property for compatibility */
-  -color-adjust: exact;
 }
 .form-check-input[type="checkbox"] {
   border-radius: 0.25em;
@@ -2831,8 +2828,8 @@ fieldset:disabled .btn {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;

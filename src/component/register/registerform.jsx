@@ -205,7 +205,7 @@ function RegistrationForm() {
                   <h4>Sign up</h4>
 
                   <p className="mb-0">
-                    Already Have An Account? <a href="/register">Log In</a>
+                    Already Have An Account? <a href="/login">Log In</a>
                   </p>
                 </div>
 
@@ -395,7 +395,7 @@ function RegistrationForm() {
                       <br />
                       <input
                         type="radio"
-                        id="rdo4"
+                        id="rdo5"
                         defaultChecked
                         className="radio-input"
                         name="radio-group"

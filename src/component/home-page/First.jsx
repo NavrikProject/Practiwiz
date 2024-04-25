@@ -1,239 +1,93 @@
 import React from "react";
+import { useEffect } from "react";
 import "./Both.css";
+import "../../js/home.js";
 export default function First() {
+  useEffect(() => {}, []);
   return (
     <>
-      <div
-        className="banner"
-        style={{
-          background: 'url("images/banner.webp") no-repeat',
-          position: "relative",
-          width: "100%",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className="banner">
         <div className="banner_content">
-          <div className="container-fluid px-5">
-            <div className="row">
-              <div className="col-lg-6 mb-4">
+          <div className="container px-5">
+            <div className="row align-items-center">
+              <div className="col-lg-8 mb-4">
                 <div className="iduherr_left">
-                  <h1>
-                    Million Hours Of Expertise - Tap Experts.{" "}
-                    <span>Grow Exponentially</span>
-                  </h1>
-                  <p id="typing" className="mb-0 mt-3" />
+                  <h1>Share Your Superpower Become a Mentor</h1>
+
+                  <p id="typing" className="mb-0 mt-3"></p>
+
+                  <button className="btn mt-5 btn-main">Register</button>
                 </div>
               </div>
-              <div className="col-lg-6 mb-4">
+
+              <div className="col-lg-4 mb-4">
                 <div className="iduherr_right">
+                  <div className="diehjrrr_intern position-relative">
+                    <div className="uidgher_circle position-absolute">
+                      <img
+                        src={"images/wdrtjh.png"}
+                        alt="wdrth"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+
+                    <div>
+                      <img
+                        src={"images/csdfsfgdf.png"}
+                        className="position-absolute"
+                        alt="csdfs"
+                        style={{ width: "56%" }}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="diehjsdrrr_intern position-relative">
+                    <div className="uidgher_circle position-absolute">
+                      <img
+                        src="images/dfsh.png"
+                        alt="dfsh"
+                        style={{ width: "100%" }}
+                      />
+                    </div>
+
+                    <div>
+                      <img
+                        src="images/mkwef.png"
+                        className="position-absolute"
+                        alt="mkwef"
+                        style={{ width: "56%" }}
+                      />
+                    </div>
+                  </div>
+
                   <div className="owl-carousel udguafr_slider owl-theme">
                     <div className="item">
                       <div className="uihderr_slider text-center">
-                        <div className="duigher_circle">
-                          <img
-                            className="diuh_image mb-2"
-                            src="images/durer.jpeg"
-                            alt="duree=r"
-                          />
-                        </div>
-                        <div className="duiehr_content">
-                          <h4 className="mb-0">Navya Chadha</h4>
-                          <p className="duiereee mb-0">
-                            Software Engineer Intern
-                          </p>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <p className="mb-0">
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />
-                            </p>
-                            <div className="uihderr d-flex align-items-center">
-                              <img src="images/vvvv.webp" alt="vvv" />
-                              <h6 className="mb-0">Verified</h6>
-                            </div>
-                          </div>
-                          <h5 className="mt-3">
-                            “Top Skill Guidance To Enhance Business Growth”
-                          </h5>
-                          <button className="btn btn-main mt-2">
-                            Book Now
-                          </button>
-                        </div>
+                        <img
+                          src="images/mentors1.jpeg"
+                          alt="mentor"
+                          style={{ width: "100%" }}
+                        />
                       </div>
                     </div>
+
                     <div className="item">
                       <div className="uihderr_slider text-center">
-                        <div className="duigher_circle">
-                          <img
-                            className="diuh_image mb-2"
-                            src="images/idherreee.webp"
-                            alt="idhe"
-                          />
-                        </div>
-                        <div className="duiehr_content">
-                          <h4 className="mb-0">Tarun Gautam</h4>
-                          <p className="duiereee mb-0">Business Analyst</p>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <p className="mb-0">
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />
-                            </p>
-                            <div className="uihderr d-flex align-items-center">
-                              <img src="images/vvvv.webp" alt="vvv2" />
-                              <h6 className="mb-0">Verified</h6>
-                            </div>
-                          </div>
-                          <h5 className="mt-3">
-                            “Top Skill Guidance To Enhance Business Growth”
-                          </h5>
-                          <button className="btn btn-main mt-2">
-                            Book Now
-                          </button>
-                        </div>
+                        <img
+                          src="images/rdtere5rt.jpg"
+                          alt="rdtere"
+                          style={{ width: "100%" }}
+                        />
                       </div>
                     </div>
+
                     <div className="item">
                       <div className="uihderr_slider text-center">
-                        <div className="duigher_circle">
-                          <img
-                            className="diuh_image mb-2"
-                            src="images/fshger.webp"
-                            alt="fsh"
-                          />
-                        </div>
-                        <div className="duiehr_content">
-                          <h4 className="mb-0">Srinivas Rao</h4>
-                          <p className="duiereee mb-0">Senior Consultant</p>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <p className="mb-0">
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />
-                            </p>
-                            <div className="uihderr d-flex align-items-center">
-                              <img src="images/vvvv.webp" alt="vvv3" />
-                              <h6 className="mb-0">Verified</h6>
-                            </div>
-                          </div>
-                          <h5 className="mt-3">
-                            “Top Skill Guidance To Enhance Business Growth”
-                          </h5>
-                          <button className="btn btn-main mt-2">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="uihderr_slider text-center">
-                        <div className="duigher_circle">
-                          <img
-                            className="diuh_image mb-2"
-                            src="images/durer.jpeg"
-                            alt="durer"
-                          />
-                        </div>
-                        <div className="duiehr_content">
-                          <h4 className="mb-0">Navya Chadha</h4>
-                          <p className="duiereee mb-0">
-                            Software Engineer Intern
-                          </p>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <p className="mb-0">
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />
-                            </p>
-                            <div className="uihderr d-flex align-items-center">
-                              <img src="images/vvvv.webp" alt="vvv4" />
-                              <h6 className="mb-0">Verified</h6>
-                            </div>
-                          </div>
-                          <h5 className="mt-3">
-                            “Top Skill Guidance To Enhance Business Growth”
-                          </h5>
-                          <button className="btn btn-main mt-2">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="uihderr_slider text-center">
-                        <div className="duigher_circle">
-                          <img
-                            className="diuh_image mb-2"
-                            src="images/idherreee.webp"
-                            alt="idher2"
-                          />
-                        </div>
-                        <div className="duiehr_content">
-                          <h4 className="mb-0">Tarun Gautam</h4>
-                          <p className="duiereee mb-0">Business Analyst</p>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <p className="mb-0">
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />
-                            </p>
-                            <div className="uihderr d-flex align-items-center">
-                              <img src="images/vvvv.webp" alt="vvv5" />
-                              <h6 className="mb-0">Verified</h6>
-                            </div>
-                          </div>
-                          <h5 className="mt-3">
-                            “Top Skill Guidance To Enhance Business Growth”
-                          </h5>
-                          <button className="btn btn-main mt-2">
-                            Book Now
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="uihderr_slider text-center">
-                        <div className="duigher_circle">
-                          <img
-                            className="diuh_image mb-2"
-                            src="images/fshger.webp"
-                            alt="fshg2"
-                          />
-                        </div>
-                        <div className="duiehr_content">
-                          <h4 className="mb-0">Srinivas Rao</h4>
-                          <p className="duiereee mb-0">Senior Consultant</p>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <p className="mb-0">
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />
-                            </p>
-                            <div className="uihderr d-flex align-items-center">
-                              <img src="images/vvvv.webp" alt="vvv6" />
-                              <h6 className="mb-0">Verified</h6>
-                            </div>
-                          </div>
-                          <h5 className="mt-3">
-                            “Top Skill Guidance To Enhance Business Growth”
-                          </h5>
-                          <button className="btn btn-main mt-2">
-                            Book Now
-                          </button>
-                        </div>
+                        <img
+                          src="images/adse.png"
+                          alt="adse"
+                          style={{ width: "100%" }}
+                        />
                       </div>
                     </div>
                   </div>
@@ -243,139 +97,463 @@ export default function First() {
           </div>
         </div>
       </div>
-
       <div className="section2 py-5 section-hor-gap">
-        <div className="container-fluid py-5">
+        <div className="container py-5">
           <div className="hjfgdfgfg">
-            <h2>
-              Limited-Time Course At Unmissable Prices <br /> That Can Transform
-              You From <span> Novice To Expert</span>
-            </h2>
+            <h2>Our Featured Mentors</h2>
           </div>
+
           <div className="khjfdgdf">
-            <div className="row">
-              <div className="col-lg-6 mb-4">
-                <div className="mkjghfdfgg bg-white">
-                  <div className="row">
-                    <div className="col-lg-5 col-md-4 col-sm-12">
-                      <div className="jdhfhddf">
-                        <img src="./images/sadd1.webp" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-lg-7 col-md-8 col-sm-12">
-                      <div className="kjdrhgjdfgf overflow-hidden">
-                        <div className="col-lg-12">
-                          <div className="d-flex align-items-center">
-                            <div className="duiher py-2 px-3 text-center">
-                              <h3 className="mb-0">$ 4999</h3>
-                            </div>
-                            <div className="fgervtytr bg-white py-2 px-3 text-center">
-                              <h3 className="mb-0">14 hours</h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="iudherrr">
-                        <div className="ndfjgf">
-                          <h4>RPA BOT DEVELOPMENT</h4>
-                        </div>
-                        <div className="jguighf">
-                          <p className="mb-0">
-                            This beginner course is for learning robotics and
-                            automation with hands-on experience in RPA live bot
-                            development.
-                          </p>
-                        </div>
-                        <div className="duihdda d-flex align-items-center my-3">
-                          <div className="uifrsdfff_circle me-3 overflow-hidden">
-                            <img src="images/cadsd.webp" alt="" />
-                          </div>
-                          <div className="uihfdff_right">
-                            <h5 className="mb-0">Tarun Gautam</h5>
-                            <p className="mb-1">Business Analyst</p>
-                            <h6 className="mb-0">
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />
-                            </h6>
-                          </div>
-                        </div>
-                        <div className="jghfghf mt-5">
-                          <button className="btn btn-main">
-                            BOOK NOW <i className="fa-solid fa-circle-right" />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+            <div className="owl-carousel ihdieruir_slider owl-theme">
+              <div className="item">
+                <div className="iheroijr_inner bg-white text-center overflow-hidden position-relative">
+                  <div className="diegrher overflow-hidden">
+                    <img
+                      src="images/mentors1.jpeg"
+                      alt="mentors1"
+                      style={{ width: "80%" }}
+                    />
+                  </div>
+
+                  <div className="doiuher_content">
+                    <h4 className="mb-0">Tarun Gautam</h4>
+
+                    <p className="profession">Business Analyst</p>
+
+                    <p className="rating mb-0">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-regular fa-star"></i>
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div className="mkjghfdfgg bg-white">
-                  <div className="row">
-                    <div className="col-lg-5 col-md-4 col-sm-12">
-                      <div className="jdhfhddf">
-                        <img src="./images/sadd2.webp" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-lg-7 col-md-8 col-sm-12">
-                      <div className="kjdrhgjdfgf overflow-hidden">
-                        <div className="col-lg-12">
-                          <div className="d-flex align-items-center">
-                            <div className="duiher py-2 px-3 text-center">
-                              <h3 className="mb-0">$ 4999</h3>
-                            </div>
-                            <div className="fgervtytr bg-white py-2 px-3 text-center">
-                              <h3 className="mb-0">14 hours</h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="iudherrr">
-                        <div className="ndfjgf">
-                          <h4>IT BUSINESS ANALYST</h4>
-                        </div>
-                        <div className="jguighf">
-                          <p className="mb-0">
-                            This is a beginner course for learning Business
-                            Analytics and developing IT solutions for all
-                            business problems.
-                          </p>
-                        </div>
-                        <div className="duihdda d-flex align-items-center my-3">
-                          <div className="uifrsdfff_circle me-3 overflow-hidden">
-                            <img src="images/cadsd.webp" alt="" />
-                          </div>
-                          <div className="uihfdff_right">
-                            <h5 className="mb-0">Tarun Gautam</h5>
-                            <p className="mb-1">Business Analyst</p>
-                            <h6 className="mb-0">
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />{" "}
-                              <i className="fa-solid fa-star" />
-                            </h6>
-                          </div>
-                        </div>
-                        <div className="jghfghf mt-5">
-                          <button className="btn btn-main">
-                            BOOK NOW <i className="fa-solid fa-circle-right" />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+
+              <div className="item">
+                <div className="iheroijr_inner bg-white text-center overflow-hidden position-relative">
+                  <div className="diegrher overflow-hidden">
+                    <img
+                      src="images/adse.png"
+                      alt="adse"
+                      style={{ width: "80%" }}
+                    />
+                  </div>
+
+                  <div className="doiuher_content">
+                    <h4 className="mb-0">Navya Chadha</h4>
+
+                    <p className="profession">Software Engineer Intern</p>
+
+                    <p className="rating mb-0">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-regular fa-star"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="item">
+                <div className="iheroijr_inner bg-white text-center overflow-hidden position-relative">
+                  <div className="diegrher overflow-hidden">
+                    <img
+                      src="images/rdtere5rt.jpg"
+                      alt="rdtere"
+                      style={{ width: "80%" }}
+                    />
+                  </div>
+
+                  <div className="doiuher_content">
+                    <h4 className="mb-0">Srinivas Rao</h4>
+
+                    <p className="profession">Senior Consultant</p>
+
+                    <p className="rating mb-0">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-regular fa-star"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="item">
+                <div className="iheroijr_inner bg-white text-center overflow-hidden position-relative">
+                  <div className="diegrher overflow-hidden">
+                    <img
+                      src="images/mentors1.jpeg"
+                      alt="mentors1"
+                      style={{ width: "80%" }}
+                    />
+                  </div>
+
+                  <div className="doiuher_content">
+                    <h4 className="mb-0">Tarun Gautam</h4>
+
+                    <p className="profession">Business Analyst</p>
+
+                    <p className="rating mb-0">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-regular fa-star"></i>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="dhhfff text-center">
             <button className="btn btn-main">
-              VIEW ALL COURSES <i className="fa-solid fa-circle-right" />
+              VIEW ALL MENTORS <i className="fa-solid fa-circle-right"></i>
             </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="section3 section-hor-gap overflow-hidden py-5">
+        <div className="container py-5">
+          <div className="diuehrr_wrapper">
+            <div className="row align-items-center">
+              <div className="col-lg-7 mb-3">
+                <div className="idheirr_content">
+                  <h2 className="mb-0">
+                    Industry Interaction Should be a
+                    <br />
+                    <span>Culture</span>
+                    <br />
+                    Not a Transaction
+                  </h2>
+
+                  <p>Learn From The Corporate, Step Into Corporate World!</p>
+
+                  <button className="btn me-2 btn-main">
+                    Register Your Institute
+                  </button>
+
+                  <button className="btn btn-main">Learn More</button>
+                </div>
+              </div>
+
+              <div className="col-lg-5">
+                <div className="cuierr_image position-relative">
+                  <img
+                    src="images/csdfsfgdf.png"
+                    alt="csdfsfgdf"
+                    className="uidghegbr__uerww dieghrytretew_image position-absolute"
+                    style={{ width: "25%" }}
+                  />
+
+                  <img
+                    src="images/architecture-independence-palace-ho-chi-minh-city-min.jpg"
+                    className="dertgrtyf_image position-relative"
+                    alt="architecture"
+                    style={{ width: "100%" }}
+                  />
+
+                  <img
+                    src="images/mkwef.png"
+                    alt="mkwef"
+                    className="uidghegbr__uerww duihueirjt_image position-absolute"
+                    style={{ width: "25%" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section4 section-hor-gap py-5">
+        <div className="container py-5">
+          <div className="bghfdg">
+            <h2>HOW MENTOR CONNECT MAKES A DIFFERENCE</h2>
+          </div>
+
+          <div className="diherrr_content text-center mt-4">
+            <h3>
+              <span>For Colleges</span>
+            </h3>
+
+            <div className="ihdiuherr mt-4">
+              <div className="row">
+                <div className="col-lg-4 mb-3">
+                  <div className="diuehr_box p-3">
+                    <div className="dihuiehr_circle">
+                      <img src="images/pic1.png" alt="pic11" />
+                    </div>
+
+                    <h4>Access to Alumni & Non-Alumni Registered Mentors</h4>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 mb-3">
+                  <div className="diuehr_box p-3">
+                    <div className="dihuiehr_circle">
+                      <img src="images/pic2.png" alt="pic2" />
+                    </div>
+
+                    <h4>Topic Specific Guest Lectures</h4>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 mb-3">
+                  <div className="diuehr_box p-3">
+                    <div className="dihuiehr_circle">
+                      <img src="images/pic3.png" alt="pic3" />
+                    </div>
+
+                    <h4>Only Mentors with 10 plus years of experience</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="diherrr_content text-center mt-4">
+            <h3>
+              <span>For Students & Professional</span>
+            </h3>
+
+            <div className="ihdiuherr mt-4">
+              <div className="row">
+                <div className="col-lg-4 mb-3">
+                  <div className="diuehr_box p-3">
+                    <div className="dihuiehr_circle">
+                      <img src="images/pic4.png" alt="pic4" />
+                    </div>
+
+                    <h4>One-On-One Mentor Sessions</h4>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 mb-3">
+                  <div className="diuehr_box p-3">
+                    <div className="dihuiehr_circle">
+                      <img src="images/pic5.png" alt="pic5" />
+                    </div>
+
+                    <h4>AI Based Mentor Matching</h4>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 mb-3">
+                  <div className="diuehr_box p-3">
+                    <div className="dihuiehr_circle">
+                      <img src="images/pic6.png" alt="pic6" />
+                    </div>
+
+                    <h4>Session Certificate for Resume</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section5 py-5">
+        <div className="container">
+          <div className="gnjhbff">
+            <h2>OUR PARTNERS</h2>
+          </div>
+
+          <div className="duygerre_partners mt-4">
+            <div className="owl-carousel opslider owl-theme">
+              <div className="item">
+                <div className="diuehrrtrer">
+                  <img
+                    src="images/wide-angle-shot-schonbrunn-palace-vienna-austria-with-cloudy-blue-sky-min.jpg"
+                    alt="wide"
+                  />
+                </div>
+              </div>
+
+              <div className="item">
+                <div className="diuehrrtrer">
+                  <img
+                    src="images/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany-min.jpg"
+                    alt="hercules"
+                  />
+                </div>
+              </div>
+
+              <div className="item">
+                <div className="diuehrrtrer">
+                  <img
+                    src="images/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany-min.jpg"
+                    alt="hall"
+                  />
+                </div>
+              </div>
+
+              <div className="item">
+                <div className="diuehrrtrer">
+                  <img
+                    src="images/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany-min.jpg"
+                    alt="surrounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section6 section-hor-gap pb-5">
+        <div className="container py-5">
+          <div className="hjgvydfgfmiddle">
+            <div className="jnhfgj">
+              <div className="diherrr_content text-center mt-4">
+                <h3>News & Blogs</h3>
+              </div>
+
+              <h2 className="mb-0 mt-4">Read Our Latest News & Blogs</h2>
+            </div>
+
+            <div className="duiherer_iuopjerr mt-5">
+              <div className="row">
+                <div className="col-lg-4 mb-4">
+                  <div className="iduherr_box bg-white">
+                    <img
+                      src="images/amy-hirschi-K0c8ko3e6AA-unsplash.jpg"
+                      alt="amy"
+                      style={{ width: "100%" }}
+                    />
+
+                    <div className="deirorner_content p-3">
+                      <div className="csdghkeetr d-flex align-items-center">
+                        <i className="fa-regular fa-clock me-2"></i>
+
+                        <p className="mb-0">20 Feb, 2024</p>
+                      </div>
+
+                      <h4 className="my-3">
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                      </h4>
+
+                      <p>
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                        ipsum Lorem ipsum Lorem ipsum
+                      </p>
+
+                      <button className="btn btn-main px-0">
+                        Read More{" "}
+                        <i className="fa-solid fa-arrow-right-long"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 mb-4">
+                  <div className="iduherr_box bg-white">
+                    <img
+                      src="images/amy-hirschi-K0c8ko3e6AA-unsplash.jpg"
+                      alt="amy"
+                      style={{ width: "100%" }}
+                    />
+
+                    <div className="deirorner_content p-3">
+                      <div className="csdghkeetr d-flex align-items-center">
+                        <i className="fa-regular fa-clock me-2"></i>
+
+                        <p className="mb-0">20 Feb, 2024</p>
+                      </div>
+
+                      <h4 className="my-3">
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                      </h4>
+
+                      <p>
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                        ipsum Lorem ipsum Lorem ipsum
+                      </p>
+
+                      <button className="btn btn-main px-0">
+                        Read More{" "}
+                        <i className="fa-solid fa-arrow-right-long"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 mb-4">
+                  <div className="iduherr_box bg-white">
+                    <img
+                      src="images/amy-hirschi-K0c8ko3e6AA-unsplash.jpg"
+                      alt="amy"
+                      style={{ width: "100%" }}
+                    />
+
+                    <div className="deirorner_content p-3">
+                      <div className="csdghkeetr d-flex align-items-center">
+                        <i className="fa-regular fa-clock me-2"></i>
+
+                        <p className="mb-0">20 Feb, 2024</p>
+                      </div>
+
+                      <h4 className="my-3">
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                      </h4>
+
+                      <p>
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                        ipsum Lorem ipsum Lorem ipsum
+                      </p>
+
+                      <button className="btn btn-main px-0">
+                        Read More{" "}
+                        <i className="fa-solid fa-arrow-right-long"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <button className="btn btn-main mt-4">View All Blogs</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section7">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="uiherr_wrapper">
+                <div className="row align-items-center">
+                  <div className="col-lg-6 mb-3">
+                    <div className="diehrer_inner">
+                      <h2>Register Now</h2>
+
+                      <p>to study in Next Academic Year 2025</p>
+
+                      <button className="btn btn-main mt-3">
+                        Register Now
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-6">
+                    <img
+                      src="images/dcaffer.png"
+                      alt="dcaffer"
+                      style={{ width: "100%" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

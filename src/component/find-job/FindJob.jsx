@@ -1,33 +1,32 @@
 import React from "react";
+import { useState } from "react";
 import "./FindJob.css";
 
 const FindJob = () => {
-  const filterOptionbox = document.querySelector("#duygerncrttt");
+  const [selectedOption, setSelectedOption] = useState("0"); // Default value is "Sort By"
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const filterBtn = document.querySelector("#uidgerr_text");
+  const handleSortChange = (e) => {
+    setSelectedOption(e.target.value);
+    // You can add sorting logic here based on the selected option
+  };
 
-    filterBtn.addEventListener("click", function () {
-      if (filterOptionbox.classList.contains("ugenhuhrtniu")) {
-        filterOptionbox.classList.remove("ugenhuhrtniu");
-      } else {
-        filterOptionbox.classList.add("ugenhuhrtniu");
-      }
-    });
-  });
+  const handleClearAll = () => {
+    setSelectedOption("0"); // Reset to default option
+    // You can add logic here to clear any other filters or selections
+  };
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const filterClosebtn = document.querySelector("#close-filter");
-
-    filterClosebtn.addEventListener("click", function () {
-      if (filterOptionbox.classList.contains("ugenhuhrtniu")) {
-        filterOptionbox.classList.remove("ugenhuhrtniu");
-      } else {
-        filterOptionbox.classList.add("ugenhuhrtniu");
-      }
-    });
-  });
-
+  const renderSelectedOptionText = () => {
+    switch (selectedOption) {
+      case "1":
+        return "Latest Jobs";
+      case "2":
+        return "Older Jobs";
+      case "3":
+        return "30+ Days";
+      default:
+        return "Sort By";
+    }
+  };
   return (
     <>
       <link
@@ -417,41 +416,11 @@ const FindJob = () => {
                           <p>Temporary</p>
                         </div>
                       </div>
-                      <div className="gghfthghdf">
-                        <div className="hfghgf225">
-                          <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" />
-                            <span>
-                              <span />
-                              <span />
-                            </span>
-                            <a />
-                          </label>
-                        </div>
-                        <div className="khgjfgf">
-                          <p>Temporary</p>
-                        </div>
-                      </div>
-                      <div className="gghfthghdf">
-                        <div className="hfghgf225">
-                          <label className="toggleSwitch nolabel" onclick="">
-                            <input type="checkbox" />
-                            <span>
-                              <span />
-                              <span />
-                            </span>
-                            <a />
-                          </label>
-                        </div>
-                        <div className="khgjfgf">
-                          <p>Temporary</p>
-                        </div>
-                      </div>
                     </div>
                   </div>
-                  {/*<div class="mkdfhgjgh">*/}
+                  {/*<div className="mkdfhgjgh">*/}
                   {/*    <h4>Date Posted</h4>*/}
-                  {/*    <div class="klfgf">*/}
+                  {/*    <div className="klfgf">*/}
                   {/*        <form action="#">*/}
                   {/*            <p>*/}
                   {/*              <input type="radio" id="test1" name="radio-group"  >*/}
@@ -626,35 +595,37 @@ const FindJob = () => {
                   <div className="csdfygtyy d-flex justify-content-between mb-4">
                     <h5 className="mb-0">SHOWING 7 JOBS</h5>
 
-                    <h4 className="cfbghed d-none" id="uidgerr_text">
+                    <div className="cfbghed d-none" id="uidgerr_text">
                       <i className="fa-solid fa-filter"></i> Filter by
-                    </h4>
+                    </div>
 
                     <div className="dieirherr_btn">
                       <div
                         className="custom-select sfgrwwe_btn btn btn-main me-2"
                         style={{ width: "14rem" }}
                       >
-                        <select>
+                        <select
+                          value={selectedOption}
+                          onChange={handleSortChange}
+                        >
                           <option value="0">Sort By</option>
-
                           <option value="1">Latest Jobs</option>
-
                           <option value="2">Older Jobs</option>
-
                           <option value="3">30+ Days</option>
                         </select>
-                        <div className="select-selected">Sort By</div>
+                        <div className="select-selected">
+                          {renderSelectedOptionText()}
+                        </div>
                       </div>
-                      <button className="btn btn-main">
-                        Clear All{" "}
+
+                      <button className="btn btn-main" onClick={handleClearAll}>
+                        Clear All
                         <span>
                           <i className="fa-solid ms-2 fa-circle-xmark"></i>
                         </span>
                       </button>
                     </div>
                   </div>
-
                   <div className="col-lg-12 mb-4">
                     <div className="kjdhhjgd p-3">
                       <div className="row">

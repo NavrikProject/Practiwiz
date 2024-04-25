@@ -1,60 +1,24 @@
 import React from "react";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { logOut } from "../redux/userRedux.js";
+import "../js/head.js";
 
 export default function Header() {
+  const user = useSelector((state) => state.user.currentUser);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const handleClick = () => {
     navigate("/register");
   };
-
   const handleLoginClick = () => {
     navigate("/login");
   };
-
-  document.addEventListener("DOMContentLoaded", function () {
-    var header = document.querySelector("header");
-
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 100) {
-        // Change 100 to whatever scroll position you prefer
-        header.classList.add("headeractive");
-      } else {
-        header.classList.remove("headeractive");
-      }
-    });
-  });
-
-  const navToggle = document.querySelector("#nav-toggler");
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const navExpand = document.querySelector("#navbarSupportedContent");
-
-    navToggle.addEventListener("click", function () {
-      if (navExpand.classList.contains("navbarmenucollapse")) {
-        navExpand.classList.remove("navbarmenucollapse");
-      } else {
-        navExpand.classList.add("navbarmenucollapse");
-      }
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const barIcon = document.querySelector("#bar-icon");
-    const closeIcon = document.querySelector("#close-mark-icon");
-    const navToggle = document.querySelector("#nav-toggle");
-
-    navToggle.addEventListener("click", function () {
-      if (barIcon.classList.contains("navbar-toggler-icon")) {
-        barIcon.classList.remove("navbar-toggler-icon");
-        closeIcon.classList.remove("d-none");
-      } else {
-        barIcon.classList.add("navbar-toggler-icon");
-        closeIcon.classList.add("d-none");
-      }
-    });
-  });
+  const onLogoutHandler = async () => {
+    dispatch(logOut());
+    navigate("/login");
+  };
 
   return (
     <>
@@ -88,6 +52,7 @@ export default function Header() {
                 <a className="navbar-brand" href="/">
                   <img src="images/logo.png" alt="" />
                 </a>
+
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -95,31 +60,33 @@ export default function Header() {
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
                 >
-                  <span id="bar-icon" className="navbar-toggler-icon" />
+                  <span id="bar-icon" className="navbar-toggler-icon"></span>
+
                   <i
                     id="close-mark-icon"
                     className="fa-solid fa-xmark d-none"
-                  />
+                  ></i>
                 </button>
                 <div
                   className="navbarmenucollapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
                   <ul className="navbar-nav me-auto">
+                    <li className="nav-item">
+                      <a className="nav-link" href="/mentorclub">
+                        Mentor Club
+                      </a>
+                    </li>
                     <li className="nav-item defdweregee">
                       <a className="nav-link" href="/">
-                        Training <i className="fa-solid fa-angle-down" />
+                        Training <i className="fa-solid fa-angle-down"></i>
                         <div className="duiehrr_dropdwn">
                           <ul className="edfrerteee_list bg-white p-3 d-none">
                             <li>IT TRAINING</li>
+
                             <li>BUSINESS TRAINING</li>
                           </ul>
                         </div>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="/">
-                        Mentor Club
                       </a>
                     </li>
                     <li className="nav-item">
@@ -130,32 +97,63 @@ export default function Header() {
                   </ul>
                   <form className="d-flex iugeuirrr align-items-center">
                     <div className="udgehrr pe-3">
-                      <div className="cdsfsdvnghff position-relative">
+                      <div className="cdsfsdvnghff ijaihnifrtt position-relative">
                         <input
+                          id="myInput"
                           className="form-control"
+                          name="myCountry"
                           type="text"
                           placeholder="Discover Your Mentor..."
                         />
-                        <i className="fa-solid fa-magnifying-glass position-absolute" />
+
+                        <i
+                          className="fas fa-search position-absolute"
+                          id="searchIcon"
+                        ></i>
+
+                        <div id="autosuggestions"></div>
                       </div>
                     </div>
-                    <div className="udgehrr">
-                      <button
-                        className="btn fvjhdf_btn btn-main mt-0"
-                        onClick={handleLoginClick}
-                      >
-                        LogIn
-                      </button>
-                    </div>
-                    <div className="udgehrr ps-3">
-                      <button
-                        className="btn btn-main mt-0"
-                        onClick={handleClick}
-                      >
-                        Register
-                      </button>
-                    </div>
                   </form>
+                  {!user ? (
+                    <form className="d-flex iugeuirrr align-items-center">
+                      <div className="udgehrr">
+                        <button
+                          className="btn fvjhdf_btn btn-main mt-0"
+                          onClick={handleLoginClick}
+                        >
+                          LogIn
+                        </button>
+                      </div>
+                      <div className="udgehrr ps-3">
+                        <button
+                          className="btn btn-main mt-0"
+                          onClick={handleClick}
+                        >
+                          Register
+                        </button>
+                      </div>
+                    </form>
+                  ) : (
+                    <div class="udgehrr position-relative ps-3">
+                      <button class="btn btn-main mt-0" type="button">
+                        <i class="fa-solid ps-0 fa-user"></i>
+                      </button>
+
+                      <ul class="djioerr_dpdwn bg-white position-absolute d-none p-3">
+                        <li>Account Settings</li>
+
+                        <li>View Public Profile</li>
+
+                        <li
+                          onClick={onLogoutHandler}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Log Out
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </nav>
