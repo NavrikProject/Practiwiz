@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menteedashboardprofilesettingsstyle.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/github.min.css"
+    />
+
+    <!--tag start-->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@yaireo/tagify/dist/tagify.css"
+    />
+
+    <!--tag end-->
+  </head>
+  <body>
+    <style>
+      html,
+      body {
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      @media only screen and (max-width: 991px) {
+        html,
+        body {
+          height: auto;
+          overflow-x: clip;
+          overflow-y: initial;
+        }
+      }
+
+      .deuirr_circle img {
+        transform: scale(2);
+      }
+    </style>
+
+    <!--header start-->
+
+    <div class="md-header">
+      <header>
+        <div class="header-wrapper">
+          <nav
+            class="navbar mx-4 px-3 mt-3 navbar-expand-sm navbar-light bg-white"
+          >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img src="images/logo.png" alt=""
+              /></a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                id="nav-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+              >
+                <span id="bar-icon" class="navbar-toggler-icon"></span>
+
+                <i id="close-mark-icon" class="fa-solid fa-xmark d-none"></i>
+              </button>
+
+              <div
+                class="navbarmenucollapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <form class="d-flex iugeuirrr align-items-center">
+                  <div class="udgehrr pe-3">
+                    <div class="cdsfsdvnghff position-relative">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Discover Your Mentor..."
+                      />
+
+                      <i
+                        class="fa-solid fa-magnifying-glass position-absolute"
+                      ></i>
+                    </div>
+                  </div>
+
+                  <div class="udgehrr position-relative ps-3">
+                    <button class="btn btn-main mt-0" type="button">
+                      <i class="fa-solid ps-0 fa-user"></i>
+                    </button>
+
+                    <ul
+                      class="djioerr_dpdwn bg-white position-absolute d-none p-3"
+                    >
+                      <li>Account Settings</li>
+
+                      <li>View Public Profile</li>
+
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+
+              <div class="odejr_res d-none">
+                <div class="d-flex align-items-center">
+                  <div class="udgehrr position-relative me-3 ps-3">
+                    <button class="btn btn-main mt-0" type="button">
+                      <i class="fa-solid ps-0 fa-user"></i>
+                    </button>
+
+                    <ul
+                      class="djioerr_dpdwn bg-white position-absolute d-none p-3"
+                    >
+                      <li>Account Settings</li>
+
+                      <li>View Public Profile</li>
+
+                      <li>Log Out</li>
+                    </ul>
+                  </div>
+
+                  <div class="dashboard-side-bar" id="responsive-side-bar">
+                    <i class="fa-solid fa-2x fa-bars-staggered"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!--middle start-->
+
+      <div class="mentor_dashboard">
+        <div class="row">
+          <div class="col-lg-2 pe-0 csdegbfraedd">
+            <div class="difuhtre_nav">
+              <button class="btn btn-transparent text-center py-3">
+                <span class="d-block bg-white position-relative m-auto mb-3"
+                  ><i class="fa-solid fa-user"></i
+                ></span>
+
+                <h5>Dashboard</h5>
+              </button>
+
+              <button class="btn btn-transparent text-center py-3">
+                <span class="d-block bg-white position-relative m-auto mb-3"
+                  ><i class="fa-solid fa-bars"></i
+                ></span>
+
+                <h5>PROFILE SETTINGS</h5>
+              </button>
+
+              <button class="btn btn-transparent text-center py-3">
+                <span class="d-block bg-white position-relative m-auto mb-3"
+                  ><i class="fa-brands fa-rocketchat"></i
+                ></span>
+
+                <h5>MESSAGES</h5>
+              </button>
+
+              <button class="btn btn-transparent text-center py-3">
+                <span class="d-block bg-white position-relative m-auto mb-3"
+                  ><i class="fa-solid fa-bell"></i
+                ></span>
+
+                <h5>NOTIFICATIONS</h5>
+              </button>
+
+              <button class="btn btn-transparent text-center py-3">
+                <span class="d-block bg-white position-relative m-auto mb-3"
+                  ><i class="fa-solid fa-arrow-right-arrow-left"></i
+                ></span>
+
+                <h5>CHANGE PASSWORD</h5>
+              </button>
+
+              <button class="btn btn-transparent text-center py-3">
+                <span class="d-block bg-white position-relative m-auto mb-3"
+                  ><i class="fa-solid fa-hourglass-half"></i
+                ></span>
+
+                <h5>COMPLETED SESSIONS</h5>
+              </button>
+
+              <button class="btn btn-transparent text-center py-3">
+                <span class="d-block bg-white position-relative m-auto mb-3"
+                  ><i class="fa-solid fa-bookmark"></i
+                ></span>
+
+                <h5>SAVED JOBS</h5>
+              </button>
+
+              <button class="btn btn-transparent text-center py-3">
+                <span class="d-block bg-white position-relative m-auto mb-3"
+                  ><i class="fa-solid fa-right-from-bracket"></i
+                ></span>
+
+                <h5>LOG OUT</h5>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-10 ps-0">
+            <div class="difuhtre_content">
+              <div class="container">
+                <div class="col-lg-10 col-md-12">
+                  <div class="mentor-prf-settings py-5">
+                    <h3>Profile Settings</h3>
+
+                    <h5>Update your profile</h5>
+
+                    <form>
+                      <div class="huygrut d-flex py-3 align-items-center">
+                        <div
+                          class="deuirr_circle position-relative overflow-hidden me-3"
+                        >
+                          <img src="images/annesa.webp" width="100%" alt="" />
+                        </div>
+
+                        <button class="btn btn-main me-3">Upload Avatar</button>
+
+                        <button class="btn btn-transparent">Delete</button>
+                      </div>
+
+                      <div class="mb-4">
+                        <label for="" class="form-label">Your Name *</label>
+
+                        <input
+                          class="form-control"
+                          placeholder="Enter Your Name"
+                          autofocus
+                        />
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="mb-4" id="skill-tag">
+                            <label for="" class="form-label"
+                              >Your Skills *</label
+                            >
+
+                            <!--<input name='tags' class="form-control" placeholder="Eg., Business Analyst, Data Scientist..." autofocus>-->
+
+                            <textarea
+                              name="tags2"
+                              placeholder="Eg., Business Analyst, Data Scientist..."
+                            >
+                            </textarea>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div class="ufguirniirtr position-relative mb-4">
+                            <label for="" class="form-label"
+                              >You Are Expertise In *</label
+                            >
+
+                            <input
+                              type="text"
+                              id="yemyInput"
+                              name="myCountry"
+                              class="form-control"
+                              placeholder="Start Typing..."
+                            />
+
+                            <div id="yeautosuggestions"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="ufguirniirtr position-relative mb-4">
+                        <label for="" class="form-label">About Me *</label>
+
+                        <textarea
+                          type="text"
+                          id="ammyInput"
+                          name="myCountry"
+                          class="form-control"
+                          placeholder="Write something about yourself"
+                        ></textarea>
+
+                        <div id="amautosuggestions"></div>
+                      </div>
+
+                      <div class="ufguirniirtr position-relative mb-4">
+                        <label for="" class="form-label"
+                          >Your Profession *</label
+                        >
+
+                        <input
+                          type="text"
+                          id="ypmyInput"
+                          name="myCountry"
+                          class="form-control"
+                          placeholder="Type what you do"
+                        />
+
+                        <div id="ypautosuggestions"></div>
+                      </div>
+
+                      <div class="ufguirniirtr position-relative mb-4">
+                        <label for="" class="form-label"
+                          >Professional Experience *</label
+                        >
+
+                        <textarea
+                          type="text"
+                          id="pemyInput"
+                          name="myCountry"
+                          class="form-control"
+                          placeholder="Write About Your Professional Experience"
+                        ></textarea>
+
+                        <div id="peautosuggestions"></div>
+                      </div>
+
+                      <div class="mb-4">
+                        <label for="" class="form-label">Your Age *</label>
+
+                        <input
+                          name="tags"
+                          class="form-control"
+                          placeholder="Enter Your Age"
+                          autofocus
+                        />
+                      </div>
+
+                      <div class="mb-4">
+                        <label for="" class="form-label">Language *</label>
+
+                        <input
+                          name="tags"
+                          class="form-control"
+                          placeholder="Language"
+                          autofocus
+                        />
+                      </div>
+
+                      <div class="mb-4">
+                        <label for="" class="form-label"
+                          >Your Social Account Link *</label
+                        >
+
+                        <input
+                          type="text"
+                          class="form-control mb-2"
+                          placeholder="Paste Your LinkedIn Profile Link"
+                        />
+
+                        <input
+                          type="text"
+                          class="form-control mb-2"
+                          placeholder="Paste Your X Profile Link (Previously Twitter)"
+                        />
+
+                        <input
+                          type="text"
+                          class="form-control mb-2"
+                          placeholder="Paste Your Youtube Link"
+                        />
+                      </div>
+
+                      <button class="btn btn-main">Save Changes</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--middle end-->
+      </div>
+
+      <!--header end-->
+
+      <!--dashboard responsive sidebar start-->
+
+      <div class="res-db-sidebar">
+        <div class="md-header ugenhuhrtniu" id="res-db-side-bar">
+          <div class="difuhtre_nav">
+            <div class="huirebff_close">
+              <i class="fa-solid fa-circle-arrow-left" id="close-filter"></i>
+            </div>
+
+            <button class="btn btn-transparent text-center py-3">
+              <span class="d-block bg-white position-relative m-auto mb-3"
+                ><i class="fa-solid fa-user"></i
+              ></span>
+
+              <h5>Dashboard</h5>
+            </button>
+
+            <button class="btn btn-transparent text-center py-3">
+              <span class="d-block bg-white position-relative m-auto mb-3"
+                ><i class="fa-solid fa-bars"></i
+              ></span>
+
+              <h5>PROFILE SETTINGS</h5>
+            </button>
+
+            <button class="btn btn-transparent text-center py-3">
+              <span class="d-block bg-white position-relative m-auto mb-3"
+                ><i class="fa-brands fa-rocketchat"></i
+              ></span>
+
+              <h5>MESSAGES</h5>
+            </button>
+
+            <button class="btn btn-transparent text-center py-3">
+              <span class="d-block bg-white position-relative m-auto mb-3"
+                ><i class="fa-solid fa-bell"></i
+              ></span>
+
+              <h5>NOTIFICATIONS</h5>
+            </button>
+
+            <button class="btn btn-transparent text-center py-3">
+              <span class="d-block bg-white position-relative m-auto mb-3"
+                ><i class="fa-solid fa-arrow-right-arrow-left"></i
+              ></span>
+
+              <h5>CHANGE PASSWORD</h5>
+            </button>
+
+            <button class="btn btn-transparent text-center py-3">
+              <span class="d-block bg-white position-relative m-auto mb-3"
+                ><i class="fa-solid fa-hourglass-half"></i
+              ></span>
+
+              <h5>COMPLETED SESSIONS</h5>
+            </button>
+
+            <button class="btn btn-transparent text-center py-3">
+              <span class="d-block bg-white position-relative m-auto mb-3"
+                ><i class="fa-solid fa-right-from-bracket"></i
+              ></span>
+
+              <h5>LOG OUT</h5>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--dashboard responsive sidebar end-->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/slider.js"></script>
+
+    <!--complete profile start-->
+
+    <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+
+    <!--tag start-->
+
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
+
+    <script>
+      var input = document.querySelector("textarea[name=tags2]"),
+        tagify = new Tagify(input, {
+          enforceWhitelist: true,
+          delimiters: null,
+          whitelist: [
+            "Technical Troubleshooting",
+            "Network Administration",
+            "System Administration",
+            "Hardware Maintenance",
+            "Software Installation",
+            "User Support",
+            "Security Management",
+            "Database Management",
+            "Cloud Computing",
+            "Virtualization",
+            "IT Project Management",
+            "Backup and Recovery",
+            "Remote Desktop Support",
+            "Mobile Device Management",
+            "Scripting and Automation",
+            "Vendor Management",
+            "Change Management",
+            "ITIL Framework Knowledge",
+            "Service Desk Management",
+            "Incident Response",
+            "Patch Management",
+            "Capacity Planning",
+            "Documentation and Reporting",
+            "IT Asset Management",
+            "Risk Assessment and Mitigation",
+            "Disaster Recovery Planning",
+            "End-user Training",
+            "Quality Assurance and Testing",
+            "Performance Monitoring and Optimization",
+            "Compliance Management",
+            "Interpersonal Communication",
+            "Problem-Solving",
+            "Time Management",
+            "Adaptability",
+            "Team Collaboration",
+          ],
+          callbacks: {
+            add: console.log, // callback when adding a tag
+            remove: console.log, // callback when removing a tag
+          },
+        });
+    </script>
+
+    <!--tag end-->
+  </body>
+</html>

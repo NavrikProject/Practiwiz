@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find job</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/findjobstyle.css">
+    <link rel="stylesheet" href="css/responsive.css">    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    
+    
+    <style>
+                .mkdfhgjgh [type=radio]:checked,
+        [type=radio]:not(:checked) {
+          position: absolute;
+          left: -9999px;
+        }
+        
+        .mkdfhgjgh  [type=radio]:checked + label,
+        [type=radio]:not(:checked) + label {
+          position: relative;
+          padding-left: 28px;
+          cursor: pointer;
+          font-size: 16px;
+          line-height: 20px;
+          display: inline-block;
+          color: #666;
+        }
+        
+        .mkdfhgjgh  [type=radio]:checked + label:before,
+        [type=radio]:not(:checked) + label:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 18px;
+          height: 18px;
+          border: 1px solid var(--main-orange-color);
+          border-radius: 100%;
+          background: #fff;
+        }
+        
+        .mkdfhgjgh  [type=radio]:checked + label:after,
+        [type=radio]:not(:checked) + label:after {
+          content: "";
+          width: 12px;
+          height: 12px;
+          background: var(--main-orange-color);
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          border-radius: 100%;
+          transition: all 0.2s ease;
+        }
+        
+        .mkdfhgjgh  [type=radio]:not(:checked) + label:after {
+          opacity: 0;
+          transform: scale(0);
+        }
+        
+        .mkdfhgjgh  [type=radio]:checked + label:after {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+    </style>
+    
+    
+    
+
+
+
+    <header>
+        <div class="header-wrapper">
+            <div class="container-fluid">
+                <nav class="navbar fixed-top mx-4 px-3 mt-3 navbar-expand-sm navbar-light bg-white">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                      
+                      <button class="navbar-toggler" type="button" id="nav-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span id="bar-icon" class="navbar-toggler-icon"></span>
+                        
+                        <i id="close-mark-icon" class="fa-solid fa-xmark d-none"></i>
+                      </button>
+    
+                      <div class="navbarmenucollapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                          <li class="nav-item defdweregee">
+                            <a class="nav-link" href="javascript:void(0)">Training <i class="fa-solid fa-angle-down"></i>
+                            
+                                <div class="duiehrr_dropdwn">
+                                    <ul class="edfrerteee_list bg-white p-3 d-none">
+                                        <li>IT TRAINING</li>
+                                        
+                                        <li>BUSINESS TRAINING</li>
+                                    </ul>
+                                </div>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Mentor Club</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Jobs</a> 
+                          </li>
+                        </ul>
+    
+                        <form class="d-flex iugeuirrr align-items-center">
+                          <div class="udgehrr pe-3">
+                            <div class="cdsfsdvnghff ijaihnifrtt position-relative">
+                                <input id="myInput" class="form-control" name="myCountry" type="text" placeholder="Discover Your Mentor...">
+                                
+                                <i class="fas fa-search position-absolute" id="searchIcon"></i>
+                                
+                                <div id="autosuggestions"></div>
+                            </div>
+                          </div>                      
+    
+                          <div class="udgehrr">
+                            <button class="btn fvjhdf_btn btn-main mt-0">LogIn</button>
+                          </div>
+                          
+                          <div class="udgehrr ps-3">
+                            <button class="btn btn-main mt-0" type="button">Register</button>
+                          </div>                     
+                        </form>
+                      </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="aslkhghj">
+        <div class="container-fluid px-5">
+            <div class="jgfgfg">
+                <h2>Find Job</h2>
+                <p>THE DOOR OF SUCCESS IS A CLICK AWAY FROM YOU</p>
+
+
+            </div>
+
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <!--responsive filter start-->
+    
+    <div class="khgjfgfhg2252 iuheirhggg_ihberr ugenhuhrtniu d-none" id="duygerncrttt">
+        <div class="knjghjfggfgfghgh">
+            <div class="huirebff_close">
+                <i class="fa-solid fa-circle-xmark" id="close-filter"></i>
+            </div>
+            
+            <div class="label2">Search by Keywords</div>
+            
+            <div class="inputWithIcon">
+                <input type="text" placeholder="Job title, keywords, or company">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="knjghjfggfgfghgh">
+            <div class="label2">Location</div>
+            <div class="inputWithIcon">
+                <input type="text" placeholder="City or postcode">
+                <i class="fa-solid fa-location-arrow"></i>
+              </div>
+        </div>
+
+        <div class="knjghjfggfgfghgh">
+            <div class="label2">Category</div>
+            <div class="inputWithIcon">
+                <input type="text" placeholder="Choose a category">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+        </div>
+
+        <div class="njghbfgfhhg">
+            <h4>Job Type</h4>
+            
+            <div class="oidjaioerr">
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>Freelance</p>
+                    </div>
+                </div>
+
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>Fulltime</p>
+                    </div>
+                </div>
+
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>PartTime</p>
+                    </div>
+                </div>
+
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>Temporary</p>
+                    </div>
+                </div>
+                
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>Temporary</p>
+                    </div>
+                </div>
+                
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>Temporary</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--<div class="mkdfhgjgh">-->
+        <!--    <h4>Date Posted</h4>-->
+            
+        <!--    <div class="klfgf">-->
+        <!--        <form action="#">-->
+        <!--            <p>-->
+        <!--              <input type="radio" id="test1" name="radio-group"  >-->
+        <!--              <label for="test1">All</label>-->
+        <!--            </p>-->
+                    
+        <!--            <p>-->
+        <!--              <input type="radio" id="test2" name="radio-group">-->
+        <!--              <label for="test2">Last Posted</label>-->
+        <!--            </p>-->
+                    
+        <!--            <p>-->
+        <!--              <input type="radio" id="test3" name="radio-group">-->
+        <!--              <label for="test3">Last 24 Hour</label>-->
+        <!--            </p>-->
+
+        <!--            <p>-->
+        <!--                <input type="radio" id="test4" name="radio-group">-->
+        <!--                <label for="test4">Last 7 Hour</label>-->
+        <!--            </p>-->
+
+        <!--            <p>-->
+        <!--                <input type="radio" id="test5" name="radio-group">-->
+        <!--                <label for="test5">Last 14 Hour</label>-->
+        <!--            </p>-->
+
+        <!--            <p>-->
+        <!--                <input type="radio" id="test6" name="radio-group">-->
+        <!--                <label for="test6">Last 30 Hour</label>-->
+        <!--            </p>-->
+                    
+        <!--            <p>-->
+        <!--                <input type="radio" id="test6" name="radio-group">-->
+        <!--                <label for="test6">Last 30 Hour</label>-->
+        <!--            </p>-->
+                    
+        <!--            <p>-->
+        <!--                <input type="radio" id="test6" name="radio-group">-->
+        <!--                <label for="test6">Last 30 Hour</label>-->
+        <!--            </p>-->
+        <!--        </form>-->
+        <!--    </div>-->
+        <!--</div>-->
+        
+          <div class="kjghfhgj">
+                                <h4>Date Posted</h4>
+                                
+                                <div class="klfgf">
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>All</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Last Posted</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Last 24 Hour</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Last 7 Hour</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+        <div class="kjghfhgj">
+            <h4>Experience Level</h4>
+            
+            <div class="klfgf">
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>Freshers</p>
+                    </div>
+                </div>
+
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>1 Year</p>
+                    </div>
+                </div>
+
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>2 Year</p>
+                    </div>
+                </div>
+
+                <div class="gghfthghdf">
+                    <div class="hfghgf225">
+                        <label class="toggleSwitch nolabel" onclick="">
+                            <input type="checkbox"   />
+                            <span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <a></a>
+                        </label> 
+                    </div>
+                    
+                    <div class="khgjfgf">
+                        <p>Freelance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                        
+    <!--responsive filter end-->
+    
+    
+    
+    
+
+
+    <div class="lkrhhdfgfdfgfhf">
+        <div class="container-fluid px-5">
+            <div class="dkjbghdfgfd">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="khgjfgfhg2252 sticky-top">
+                            <div class="knjghjfggfgfghgh">
+                                <div class="label2">Search by Keywords</div>
+                                <div class="inputWithIcon">
+                                    <input type="text" placeholder="Job title, keywords, or company">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+
+                            <div class="knjghjfggfgfghgh">
+                                <div class="label2">Location</div>
+                                <div class="inputWithIcon">
+                                    <input type="text" placeholder="City or postcode">
+                                    <i class="fa-solid fa-location-arrow"></i>
+                                  </div>
+                            </div>
+
+                            <div class="knjghjfggfgfghgh">
+                                <div class="label2">Category</div>
+                                <div class="inputWithIcon">
+                                    <input type="text" placeholder="Choose a category">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                  </div>
+                            </div>
+
+                            <div class="njghbfgfhhg">
+                                <h4>Job Type</h4>
+                                
+                                <div class="oidjaioerr">
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Freelance</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Fulltime</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>PartTime</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Temporary</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Temporary</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Temporary</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--<div class="mkdfhgjgh">-->
+                            <!--    <h4>Date Posted</h4>-->
+                                
+                            <!--    <div class="klfgf">-->
+                            <!--        <form action="#">-->
+                            <!--            <p>-->
+                            <!--              <input type="radio" id="test1" name="radio-group"  >-->
+                            <!--              <label for="test1">All</label>-->
+                            <!--            </p>-->
+                                        
+                            <!--            <p>-->
+                            <!--              <input type="radio" id="test2" name="radio-group">-->
+                            <!--              <label for="test2">Last Posted</label>-->
+                            <!--            </p>-->
+                                        
+                            <!--            <p>-->
+                            <!--              <input type="radio" id="test3" name="radio-group">-->
+                            <!--              <label for="test3">Last 24 Hour</label>-->
+                            <!--            </p>-->
+
+                            <!--            <p>-->
+                            <!--                <input type="radio" id="test4" name="radio-group">-->
+                            <!--                <label for="test4">Last 7 Hour</label>-->
+                            <!--            </p>-->
+
+                            <!--            <p>-->
+                            <!--                <input type="radio" id="test5" name="radio-group">-->
+                            <!--                <label for="test5">Last 14 Hour</label>-->
+                            <!--            </p>-->
+
+                            <!--            <p>-->
+                            <!--                <input type="radio" id="test6" name="radio-group">-->
+                            <!--                <label for="test6">Last 30 Hour</label>-->
+                            <!--            </p>-->
+                                        
+                            <!--            <p>-->
+                            <!--                <input type="radio" id="test6" name="radio-group">-->
+                            <!--                <label for="test6">Last 30 Hour</label>-->
+                            <!--            </p>-->
+                                        
+                            <!--            <p>-->
+                            <!--                <input type="radio" id="test6" name="radio-group">-->
+                            <!--                <label for="test6">Last 30 Hour</label>-->
+                            <!--            </p>-->
+                            <!--        </form>-->
+                            <!--    </div>-->
+                            <!--</div>-->
+                            
+                            <div class="kjghfhgj">
+                                <h4>Date Posted</h4>
+                                
+                                <div class="klfgf">
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>All</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Last Posted</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Last 24 Hour</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Last 7 Hour</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                
+
+                            <div class="kjghfhgj">
+                                <h4>Experience Level</h4>
+                                
+                                <div class="klfgf">
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Freshers</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>1 Year</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"/>
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>2 Year</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="gghfthghdf">
+                                        <div class="hfghgf225">
+                                            <label class="toggleSwitch nolabel" onclick="">
+                                                <input type="checkbox"   />
+                                                <span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                                <a></a>
+                                            </label> 
+                                        </div>
+                                        
+                                        <div class="khgjfgf">
+                                            <p>Freelance</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-9">
+                        <div class="ihdsrfgbg pt-3">
+                            <div class="csdfygtyy d-flex justify-content-between mb-4">
+                                <h5 class="mb-0">SHOWING 7 JOBS</h5>
+                                
+                                <h4 class="cfbghed d-none" id="uidgerr_text"><i class="fa-solid fa-filter"></i> Filter by</h4>
+                                
+                                <div class="dieirherr_btn">
+                                    <div class="custom-select sfgrwwe_btn btn btn-main me-2" style="width:14rem;">
+                                        <select>
+                                          <option value="0">Sort By</option>
+                                          
+                                          <option value="1">Latest Jobs</option>
+                                          
+                                          <option value="2">Older Jobs</option>
+                                          
+                                          <option value="3">30+ Days</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <button class="btn btn-main">Clear All <span><i class="fa-solid ms-2 fa-circle-xmark"></i></span></button>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 mb-4">
+                                <div class="kjdhhjgd p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+                                            <div class="hjgfdfg">
+                                                <img src="./images/download (21).webp" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-9 col-md-9 col-sm-12 ps-lg-0 ps-sm-2">
+                                            <div class="kfhgjfgfh mb-2 d-flex align-items-center justify-content-between">
+                                                <div class="jhgjgf">
+                                                    <h4 class="mb-0">Sr. PHP Developer</h4>
+                                                </div>
+    
+                                                <div class="jhgjgf1">
+                                                    <div class="mhgf position-relative text-center">
+                                                        <i class="fa-regular fa-bookmark position-absolute"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="nfhjdfghfdghf mb-3">
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-location-arrow me-1"></i> Newtown,kolkata</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-sack-dollar me-1"></i> $24k-$30k</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-bag-shopping me-1"></i> 4yr. Exp.</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg1 oidefrgtry px-2 py-1">Full Time</button>
+                                            </div>
+    
+                                            <div class="hjgfjgfgf">
+                                                <button>PHP</button>
+                                                
+                                                <button>Java</button>
+                                                
+                                                <button>Magento</button>
+                                                
+                                                <button>Laravel</button>
+                                                
+                                                <button>Photoshop</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 mb-4">
+                                <div class="kjdhhjgd p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+                                            <div class="hjgfdfg">
+                                                <img src="./images/download (21).webp" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-9 col-md-9 col-sm-12 ps-lg-0 ps-sm-2">
+                                            <div class="kfhgjfgfh mb-2 d-flex align-items-center justify-content-between">
+                                                <div class="jhgjgf">
+                                                    <h4 class="mb-0">Sr. PHP Developer</h4>
+                                                </div>
+    
+                                                <div class="jhgjgf1">
+                                                    <div class="mhgf position-relative text-center">
+                                                        <i class="fa-regular fa-bookmark position-absolute"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="nfhjdfghfdghf mb-3">
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-location-arrow me-1"></i> Newtown,kolkata</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-sack-dollar me-1"></i> $24k-$30k</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-bag-shopping me-1"></i> 4yr. Exp.</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg1 oidefrgtry px-2 py-1">Full Time</button>
+                                            </div>
+    
+                                            <div class="hjgfjgfgf">
+                                                <button>PHP</button>
+                                                
+                                                <button>Java</button>
+                                                
+                                                <button>Magento</button>
+                                                
+                                                <button>Laravel</button>
+                                                
+                                                <button>Photoshop</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 mb-4">
+                                <div class="kjdhhjgd p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+                                            <div class="hjgfdfg">
+                                                <img src="./images/download (21).webp" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-9 col-md-9 col-sm-12 ps-lg-0 ps-sm-2">
+                                            <div class="kfhgjfgfh mb-2 d-flex align-items-center justify-content-between">
+                                                <div class="jhgjgf">
+                                                    <h4 class="mb-0">Sr. PHP Developer</h4>
+                                                </div>
+    
+                                                <div class="jhgjgf1">
+                                                    <div class="mhgf position-relative text-center">
+                                                        <i class="fa-regular fa-bookmark position-absolute"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="nfhjdfghfdghf mb-3">
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-location-arrow me-1"></i> Newtown,kolkata</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-sack-dollar me-1"></i> $24k-$30k</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-bag-shopping me-1"></i> 4yr. Exp.</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg1 oidefrgtry px-2 py-1">Full Time</button>
+                                            </div>
+    
+                                            <div class="hjgfjgfgf">
+                                                <button>PHP</button>
+                                                
+                                                <button>Java</button>
+                                                
+                                                <button>Magento</button>
+                                                
+                                                <button>Laravel</button>
+                                                
+                                                <button>Photoshop</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 mb-4">
+                                <div class="kjdhhjgd p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+                                            <div class="hjgfdfg">
+                                                <img src="./images/download (21).webp" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-9 col-md-9 col-sm-12 ps-lg-0 ps-sm-2">
+                                            <div class="kfhgjfgfh mb-2 d-flex align-items-center justify-content-between">
+                                                <div class="jhgjgf">
+                                                    <h4 class="mb-0">Sr. PHP Developer</h4>
+                                                </div>
+    
+                                                <div class="jhgjgf1">
+                                                    <div class="mhgf position-relative text-center">
+                                                        <i class="fa-regular fa-bookmark position-absolute"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="nfhjdfghfdghf mb-3">
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-location-arrow me-1"></i> Newtown,kolkata</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-sack-dollar me-1"></i> $24k-$30k</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-bag-shopping me-1"></i> 4yr. Exp.</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg1 oidefrgtry px-2 py-1">Full Time</button>
+                                            </div>
+    
+                                            <div class="hjgfjgfgf">
+                                                <button>PHP</button>
+                                                
+                                                <button>Java</button>
+                                                
+                                                <button>Magento</button>
+                                                
+                                                <button>Laravel</button>
+                                                
+                                                <button>Photoshop</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 mb-4">
+                                <div class="kjdhhjgd p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+                                            <div class="hjgfdfg">
+                                                <img src="./images/download (21).webp" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-9 col-md-9 col-sm-12 ps-lg-0 ps-sm-2">
+                                            <div class="kfhgjfgfh mb-2 d-flex align-items-center justify-content-between">
+                                                <div class="jhgjgf">
+                                                    <h4 class="mb-0">Sr. PHP Developer</h4>
+                                                </div>
+    
+                                                <div class="jhgjgf1">
+                                                    <div class="mhgf position-relative text-center">
+                                                        <i class="fa-regular fa-bookmark position-absolute"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="nfhjdfghfdghf mb-3">
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-location-arrow me-1"></i> Newtown,kolkata</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-sack-dollar me-1"></i> $24k-$30k</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-bag-shopping me-1"></i> 4yr. Exp.</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg1 oidefrgtry px-2 py-1">Full Time</button>
+                                            </div>
+    
+                                            <div class="hjgfjgfgf">
+                                                <button>PHP</button>
+                                                
+                                                <button>Java</button>
+                                                
+                                                <button>Magento</button>
+                                                
+                                                <button>Laravel</button>
+                                                
+                                                <button>Photoshop</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 mb-4">
+                                <div class="kjdhhjgd p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+                                            <div class="hjgfdfg">
+                                                <img src="./images/download (21).webp" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-9 col-md-9 col-sm-12 ps-lg-0 ps-sm-2">
+                                            <div class="kfhgjfgfh mb-2 d-flex align-items-center justify-content-between">
+                                                <div class="jhgjgf">
+                                                    <h4 class="mb-0">Sr. PHP Developer</h4>
+                                                </div>
+    
+                                                <div class="jhgjgf1">
+                                                    <div class="mhgf position-relative text-center">
+                                                        <i class="fa-regular fa-bookmark position-absolute"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="nfhjdfghfdghf mb-3">
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-location-arrow me-1"></i> Newtown,kolkata</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-sack-dollar me-1"></i> $24k-$30k</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-bag-shopping me-1"></i> 4yr. Exp.</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg1 oidefrgtry px-2 py-1">Full Time</button>
+                                            </div>
+    
+                                            <div class="hjgfjgfgf">
+                                                <button>PHP</button>
+                                                
+                                                <button>Java</button>
+                                                
+                                                <button>Magento</button>
+                                                
+                                                <button>Laravel</button>
+                                                
+                                                <button>Photoshop</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-12 mb-4">
+                                <div class="kjdhhjgd p-3">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 mb-4">
+                                            <div class="hjgfdfg">
+                                                <img src="./images/download (21).webp" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-lg-9 col-md-9 col-sm-12 ps-lg-0 ps-sm-2">
+                                            <div class="kfhgjfgfh mb-2 d-flex align-items-center justify-content-between">
+                                                <div class="jhgjgf">
+                                                    <h4 class="mb-0">Sr. PHP Developer</h4>
+                                                </div>
+    
+                                                <div class="jhgjgf1">
+                                                    <div class="mhgf position-relative text-center">
+                                                        <i class="fa-regular fa-bookmark position-absolute"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="nfhjdfghfdghf mb-3">
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-location-arrow me-1"></i> Newtown,kolkata</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-sack-dollar me-1"></i> $24k-$30k</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg ps-0 btn btn-transparent">
+                                                    <p class="mb-0"><i class="fa-solid fa-bag-shopping me-1"></i> 4yr. Exp.</p>
+                                                </button>
+    
+                                                <button class="rlknjhgjfg1 oidefrgtry px-2 py-1">Full Time</button>
+                                            </div>
+    
+                                            <div class="hjgfjgfgf">
+                                                <button>PHP</button>
+                                                
+                                                <button>Java</button>
+                                                
+                                                <button>Magento</button>
+                                                
+                                                <button>Laravel</button>
+                                                
+                                                <button>Photoshop</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="section7" style="background: url('images/bb2.webp') no-repeat; width: 100%; background-position: center; background-size: cover;">
+        <div class="container-fluid section-hor-gap py-5">
+            <div class="duieghrrr_content">
+                <div class="dskjdfhgdfgfgfd text-center">
+                    <h2>Breakthrough Your Career <br> With <span>Knowledgeable </span> Experts</h2>
+                    
+                    <p class="mb-0">We try to help you boost a secure career with our professional <br> experts. We are here to work with you on your educational journey.</p>
+                </div>
+    
+                <div class="idcuhsewfrsedf mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-md-8 col-sm-12">
+                            <div class="position-relative">
+                                <i class="fa-solid fa-envelopes-bulk position-absolute"></i>
+
+                                <input type="text" class="form-control" placeholder="Enter your email">
+
+                                <button class="btn btn-main position-absolute"><span>CONNECT FOR FREE</span> <i class="fa-regular d-none position-absolute fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+ 
+    
+
+      
+
+
+
+  
+<footer class="section-hor-gap py-5 mt-5">       
+        <div class="container-fluid pt-4">
+            <div class="jfuhygfdgdfrg">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="jdfhgdfg">
+                            <h4 class="mb-4">About Us</h4>
+                            
+                            <p>Providing solution-oriented guidance through the best mentors who have an immense amount of knowledge and experience in the specific field. We have discovered that the students struggle to gain expertise without proper guidance.</p>
+
+                            <p class="mb-0">Join us to transform your career and build an unimaginable path for you.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="jhdgfvdg">
+                            <div class="row">
+                                <div class="col-lg-3 mb-4">
+                                    <div class="hjgfgfghghgfh">
+                                        <div class="fugjfgf mb-4">
+                                            <h4>Navigation</h4>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> Home</a>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> IT Training</a>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> Business Training</a>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> Mentor Club</a>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> Jobs</a>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="col-lg-3 mb-4">
+                                    <div class="hjgfgfghghgfh">
+                                        <div class="fugjfgf mb-4">
+                                            <h4>Useful Links</h4>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> Contact Us</a>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> About Us</a>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> Blog</a>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> Terms & Condition</a>
+                                        </div>
+
+                                        <div class="nbffg position-relative mb-3">
+                                            <a href=""><i class="fa-solid fa-angle-right"></i> Privacy & Policy</a>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="col-lg-6">
+                                    <div class="hjgfgfghghgfh">
+                                        <div class="fugjfgf mb-4">
+                                            <h4>Contact Us</h4>
+                                        </div>
+
+                                        <div class="nbffg2 mb-3">
+                                            <a href="" class="d-flex">
+                                                <i class="fa-solid pe-2 fa-location-arrow"></i> 
+                                                
+                                                <p class="mb-0">B 1/5 Safdarjung Enclave Africa Avenue New Delhi Pin-110029</p>                                                
+                                            </a>
+                                        </div>
+
+                                        <div class="nbffg2 mb-3">
+                                            <a href="" class="d-flex">
+                                                <i class="fa-solid pe-2 fa-phone"></i> 
+                                                
+                                                <p class="mb-0">(120) 3569310</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="nbffg2 mb-4">
+                                            <a href="" class="d-flex">
+                                                <i class="fa-solid pe-2 fa-envelope"></i> 
+                                                
+                                                <p class="mb-0">wecare@practiwiz.com</p>
+                                            </a>
+                                        </div>
+
+                                        <div class="bghjdfgfdg">
+                                            <h4 class="mb-4">Follow Us</h4>
+
+                                            <div class="ghfgdfgfgffgfg">
+                                                <button class="position-relative me-lg-2">
+                                                    <i class="fa-brands position-absolute fa-facebook-f"></i>
+                                                </button> 
+                                                
+                                                <button class="position-relative me-lg-2">
+                                                    <i class="fa-brands position-absolute fa-instagram"></i>
+                                                </button>                                               
+
+                                                <button class="position-relative me-lg-2">
+                                                    <i class="fa-brands position-absolute fa-linkedin-in"></i>
+                                                </button>                                                
+
+                                                <button class="position-relative me-lg-2">
+                                                    <i class="fa-brands position-absolute fa-x-twitter"></i>
+                                                </button>                                                
+                                                
+                                                <button class="position-relative me-lg-2">
+                                                    <i class="fa-brands position-absolute fa-tiktok"></i>
+                                                </button>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </footer>
+
+    
+   
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/global.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/slider.js"></script>
+
+            <script>
+                $(function () {
+        var btn = $('.search-button'),
+        val_length;
+        $('input').keyup(function () {
+            val_length = $(this).val().length;
+            if ( val_length > 0 ) {
+            btn.addClass('typed');
+            } else {
+            btn.removeClass('typed');
+            }
+        });
+        btn.click(function () {
+            if ( val_length > 0 ) {
+            $('input').val('').trigger('keyup').focus();
+            }
+        })
+        });
+    </script>
+
+    <!-- start typing  js  -->
+
+    <script>
+                    // these phrases will repeat
+            const phrases = [
+            "Learn Data-driven Bussiness Insights",
+            // "This is a typing effect.",
+            // "You can change the phrases.",
+            // "Customize it as you like!"
+            ];
+
+            // start with initial random phrase from the collection
+            // Math.floor reduces float to integer
+            let currentPhrase = Math.floor(Math.random() * (phrases.length - 1));
+            let currentChar = 0;
+            // this element has the typing line
+            let typingLine = document.getElementById("typing");
+
+            // type() the phrase char-by-char
+            //
+            function type() {
+            // write sub-string to the element
+            typingLine.textContent = phrases[currentPhrase].slice(0, ++currentChar);
+
+            // continue to write until we run out of phrase-chars
+            if (currentChar < phrases[currentPhrase].length) {
+                // slow down the animation
+                setTimeout(function () {
+                // animates the changes to DOM
+                requestAnimationFrame(type);
+                }, 25);
+            } else {
+                // we ran out of phrase length
+                // now wait 2 seconds
+                // then call "erase" method to start erasing
+                setTimeout(erase, 2000);
+            }
+            }
+
+            // erase() characters one-by-one
+            //
+            function erase() {
+            // reduce one char, assign to the element
+            typingLine.textContent = phrases[currentPhrase].slice(0, --currentChar);
+
+            // we still have more chars to erase
+            if (currentChar > 0) {
+                // pause 25ms, then animate the element rendering
+                setTimeout(function () {
+                requestAnimationFrame(erase);
+                }, 25);
+            } else {
+                // we ran out of chars for current phrase
+                // reset to first char
+                currentChar = 0;
+                // move to the next phrase
+                // "%" ensures endless loop within phrases
+                currentPhrase = (currentPhrase + 1) % phrases.length;
+                // all erased? now start "typing" again
+                setTimeout(type, 1000);
+            }
+            }
+
+            // start the first "typing"
+            type();
+
+    </script>
+
+      <!-- end typing  js  -->
+
+
+      <!-- start tab content js -->
+       <script>
+                $(document).ready(function(){
+            
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            })
+
+        })
+       </script>
+
+       <script>
+        const tabsBtns = Array.from(document.querySelectorAll("[data-tab-id]"));
+const tabs = Array.from(document.querySelectorAll("[data-tab]"));
+
+let selectedTab = tabsBtns[0].dataset.tabId;
+
+const hideTabs = () => {
+tabs
+    .filter((tab) => tab.dataset.tab !== selectedTab)
+    .forEach((tab) => {
+    tab.classList.add("tabs__tab--hide");
+    });
+
+tabsBtns
+    .filter((tab) => tab.dataset.tabId !== selectedTab)
+    .forEach((tab) => {
+    tab.classList.add("tabs__tab-btn--not-selected");
+    });
+};
+hideTabs();
+
+const handleSelectTab = (e) => {
+selectedTab = e.target.dataset.tabId;
+
+tabs.forEach((tab) => {
+    tab.classList.remove("tabs__tab--hide");
+});
+
+tabsBtns.forEach((tab) => {
+    tab.classList.remove("tabs__tab-btn--not-selected");
+});
+
+hideTabs();
+};
+
+tabsBtns.forEach((btn) => {
+btn.addEventListener("click", handleSelectTab);
+});
+       </script>
+
+      <!-- end tab content js -->
+      
+      
+      
+      <!-- new script-->
+       
+ 
+
+    
+
+</body>
+</html>

@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentor Choice</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mentor_choicestyle.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--header start-->
+
+    <header>
+      <div class="header-wrapper">
+        <div class="container-fluid">
+          <nav
+            class="navbar fixed-top mx-4 px-3 mt-3 navbar-expand-sm navbar-light bg-white"
+          >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img src="images/logo.png" alt=""
+              /></a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                id="nav-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+              >
+                <span id="bar-icon" class="navbar-toggler-icon"></span>
+
+                <i id="close-mark-icon" class="fa-solid fa-xmark d-none"></i>
+              </button>
+
+              <div
+                class="navbarmenucollapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item defdweregee">
+                    <a class="nav-link" href="javascript:void(0)"
+                      >Training <i class="fa-solid fa-angle-down"></i>
+
+                      <div class="duiehrr_dropdwn">
+                        <ul class="edfrerteee_list bg-white p-3 d-none">
+                          <li>IT TRAINING</li>
+
+                          <li>BUSINESS TRAINING</li>
+                        </ul>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)"
+                      >Mentor Club</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Jobs</a>
+                  </li>
+                </ul>
+
+                <form class="d-flex iugeuirrr align-items-center">
+                  <div class="udgehrr pe-3">
+                    <div class="cdsfsdvnghff position-relative">
+                      <input
+                        id="myInput"
+                        class="form-control"
+                        name="myCountry"
+                        type="text"
+                        placeholder="Discover Your Mentor..."
+                      />
+
+                      <i
+                        class="fas fa-search position-absolute"
+                        id="searchIcon"
+                      ></i>
+
+                      <div id="autosuggestions"></div>
+                    </div>
+                  </div>
+
+                  <div class="udgehrr">
+                    <button class="btn fvjhdf_btn btn-main mt-0">LogIn</button>
+                  </div>
+
+                  <div class="udgehrr ps-3">
+                    <button class="btn btn-main mt-0" type="button">
+                      Register
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--header end-->
+
+    <div class="aslkhghj2">
+      <div class="jbbhvf55">
+        <div class="container-fluid px-5">
+          <div class="jgfgfg">
+            <h2>Mentor club</h2>
+            <p>Home <i class="fa-solid fa-angles-right"></i> Mentor Club</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <style>
+        .bhduebbuger ul {
+          border-radius: 10px;
+          box-shadow: 1px 3px 14px #1c49802b;
+          width: 100%;
+          left: 0;
+          z-index: 9;
+        }
+
+        .bhduebbuger .dgeubr li {
+          list-style: none;
+        }
+
+        .diugerbihr h6 {
+          font-family: var(--font-family-lato);
+          font-weight: 600;
+        }
+
+        .bhduebbuger input[type="radio"] {
+          display: none;
+        }
+
+        .bhduebbuger label {
+          padding: 0.2em 0.7rem;
+          display: inline-block;
+          border: 1px solid #dadce0;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 14px;
+        }
+
+        .bhduebbuger .blank-label {
+          display: none;
+        }
+
+        .bhduebbuger input[type="radio"]:checked + label {
+          background: #2e64e3;
+          color: #fff;
+        }
+
+        .price-input {
+          width: 100%;
+          display: flex;
+          margin: 10px 0 35px;
+          font-family: var(--font-family-lato);
+        }
+        .field input {
+          width: 100%;
+          height: 100%;
+          outline: none;
+          font-size: 1rem;
+          border-radius: 5px;
+          text-align: center;
+          border: 1px solid #dadce0;
+          -moz-appearance: textfield;
+        }
+        .dsefsewgre input[type="number"]::-webkit-outer-spin-button,
+        .dsefsewgre input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+        .price-input .separator {
+          width: 130px;
+          display: flex;
+          font-size: 19px;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .price-input span {
+          font-weight: 600;
+        }
+        .slider {
+          height: 5px;
+          position: relative;
+          background: #ddd;
+          border-radius: 5px;
+        }
+        .dsefsewgre .slider .progress {
+          height: 100%;
+          left: 25%;
+          right: 25%;
+          position: absolute;
+          border-radius: 5px;
+          background: #17a2b8;
+        }
+        .dsefsewgre .range-input {
+          position: relative;
+        }
+        .dsefsewgre .range-input input {
+          position: absolute;
+          width: 100%;
+          height: 5px;
+          top: -5px;
+          background: none;
+          pointer-events: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+        }
+        .dsefsewgre input[type="range"]::-webkit-slider-thumb {
+          height: 17px;
+          width: 17px;
+          border-radius: 50%;
+          background: #17a2b8;
+          pointer-events: auto;
+          -webkit-appearance: none;
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+        }
+        .dsefsewgre input[type="range"]::-moz-range-thumb {
+          height: 17px;
+          width: 17px;
+          border: none;
+          border-radius: 50%;
+          background: #17a2b8;
+          pointer-events: auto;
+          -moz-appearance: none;
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Support */
+        .support-box {
+          top: 2rem;
+          position: relative;
+          bottom: 0;
+          text-align: center;
+          display: block;
+        }
+
+        .ohgiererr_list label {
+          padding: 0.2em 0.3rem;
+        }
+
+        .ohgiererr_list label i {
+          font-size: 13px;
+        }
+
+        .cjdsuibfsdf_btn {
+          display: inline-block;
+        }
+
+        .dieirherr_btn .oikahdbaed_filter span:after {
+          display: none;
+        }
+      </style>
+
+      <div class="kghfbgfgbhfg pb-0">
+        <div class="ighefirr bg-white py-2">
+          <div class="container-fluid px-5">
+            <div
+              class="uilhdier_filter_wrap d-flex slign-items-center justify-content-between"
+            >
+              <div class="dieirherr_btn bhduebbuger">
+                <span class="cjdsuibfsdf_btn position-relative">
+                  <button
+                    class="custom-select sfgrwwe_btn btn btn-main me-2"
+                    id="bmfltrbtn"
+                  >
+                    <span>Mentor Availability</span>
+                  </button>
+
+                  <ul
+                    class="diugerbihr p-3 bg-white position-absolute text-left d-none"
+                    id="bm-filter-drpdwn"
+                  >
+                    <h6>Mentors available within</h6>
+
+                    <div class="row dgeubr mt-3">
+                      <div class="col-lg-6 mb-2">
+                        <input type="radio" id="cat" name="animal" value="" />
+                        <label for="cat">7 Days</label>
+                      </div>
+
+                      <div class="col-lg-6 mb-2">
+                        <input type="radio" id="dog" name="animal" value="" />
+                        <label for="dog">14 Days</label>
+                      </div>
+
+                      <div class="col-lg-6 mb-2">
+                        <input type="radio" id="pig" name="animal" value="" />
+                        <label for="pig">21 Days</label>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <input type="radio" id="vdsf" name="animal" value="" />
+                        <label for="vdsf">30 Days</label>
+                      </div>
+                    </div>
+                  </ul>
+                </span>
+
+                <span class="cjdsuibfsdf_btn position-relative">
+                  <button
+                    class="custom-select sfgrwwe_btn btn btn-main mx-2"
+                    id="bmfltrbtn2"
+                  >
+                    <span>Experience</span>
+                  </button>
+
+                  <ul
+                    class="diugerbihr p-3 bg-white position-absolute text-left d-none"
+                    id="bm-filter-drpdwn2"
+                  >
+                    <h6>Mentors with the experience (Yrs) of</h6>
+
+                    <div class="row dgeubr mt-3">
+                      <div class="col-lg-6 mb-2">
+                        <input
+                          type="radio"
+                          id="sdsd"
+                          name="csdfdwrtt"
+                          value=""
+                        />
+                        <label for="sdsd">3 - 5</label>
+                      </div>
+
+                      <div class="col-lg-6 mb-2">
+                        <input
+                          type="radio"
+                          id="sadf"
+                          name="csdfdwrtt"
+                          value=""
+                        />
+                        <label for="sadf">5 - 7</label>
+                      </div>
+
+                      <div class="col-lg-6 mb-2">
+                        <input
+                          type="radio"
+                          id="gdfg"
+                          name="csdfdwrtt"
+                          value=""
+                        />
+                        <label for="gdfg">7 - 9</label>
+                      </div>
+
+                      <div class="col-lg-6">
+                        <input
+                          type="radio"
+                          id="gftsr"
+                          name="csdfdwrtt"
+                          value=""
+                        />
+                        <label for="gftsr">9+</label>
+                      </div>
+                    </div>
+                  </ul>
+                </span>
+
+                <span class="cjdsuibfsdf_btn position-relative">
+                  <button
+                    class="custom-select sfgrwwe_btn btn btn-main mx-2"
+                    id="bmfltrbtn3"
+                  >
+                    <span
+                      >Price Range (<i class="fa-solid fa-indian-rupee-sign"></i
+                      >)</span
+                    >
+                  </button>
+
+                  <ul
+                    class="diugerbihr p-3 bg-white position-absolute d-none"
+                    id="bm-filter-drpdwn3"
+                  >
+                    <div class="wrapper">
+                      <div class="price-input">
+                        <div class="field">
+                          <span>Min</span>
+                          <input type="number" class="input-min" value="2500" />
+                        </div>
+
+                        <div class="separator">-</div>
+
+                        <div class="field">
+                          <span>Max</span>
+                          <input type="number" class="input-max" value="7500" />
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </span>
+
+                <span class="cjdsuibfsdf_btn position-relative">
+                  <button
+                    class="custom-select sfgrwwe_btn btn btn-main ms-2"
+                    id="bmfltrbtn4"
+                  >
+                    <span>Rating</span>
+                  </button>
+
+                  <ul
+                    class="diugerbihr ohgiererr_list p-3 bg-white position-absolute d-none"
+                    id="bm-filter-drpdwn4"
+                  >
+                    <h6>Choose rating</h6>
+
+                    <div class="row dgeubr mt-3">
+                      <div class="col-lg-12 mb-2">
+                        <input type="radio" id="dsad" name="fcreter" value="" />
+                        <label for="dsad"
+                          >1 (<i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="sadsad"
+                          name="fcreter"
+                          value=""
+                        />
+                        <label for="sadsad"
+                          >2 (<i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="hgffgh"
+                          name="fcreter"
+                          value=""
+                        />
+                        <label for="hgffgh"
+                          >3 (<i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="kggfg"
+                          name="fcreter"
+                          value=""
+                        />
+                        <label for="kggfg"
+                          >4 (<i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+
+                      <div class="col-lg-12">
+                        <input
+                          type="radio"
+                          id="poirer"
+                          name="fcreter"
+                          value=""
+                        />
+                        <label for="poirer"
+                          >5 (<i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+                    </div>
+                  </ul>
+                </span>
+
+                <button
+                  class="custom-select sfgrwwe_btn oikahdbaed_filter btn btn-main d-none"
+                  id="fuygernert"
+                >
+                  <span>Filter</span>
+                </button>
+              </div>
+
+              <div class="ibhdiber_btn">
+                <button class="btn btn-main">
+                  Apply Filter <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kjgbhdfdfgfghfghfg">
+        <div class="container-fluid px-5">
+          <div class="nfhjgbgf">
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq1.webp" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Gourav Bhati</h4>
+
+                  <h6>Product Owner</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>07 Sessions (57 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq2.webp" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Bhavanesh Asar</h4>
+
+                  <h6>Enterprise architect</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>12 Sessions (107 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq3.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Tarun Gautam</h4>
+
+                  <h6>Business Analyst</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>102 Sessions (295 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq4.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Navya Chadha</h4>
+
+                  <h6>Software Engineer Intern</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>11 Sessions (27 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq5.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Srinivas Rao</h4>
+
+                  <h6>Senior Consultant</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>197 Sessions (247 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq1.webp" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Gourav Bhati</h4>
+
+                  <h6>Product Owner</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>07 Sessions (57 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq2.webp" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Bhavanesh Asar</h4>
+
+                  <h6>Enterprise architect</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>12 Sessions (107 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq3.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Tarun Gautam</h4>
+
+                  <h6>Business Analyst</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>102 Sessions (295 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq4.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Navya Chadha</h4>
+
+                  <h6>Software Engineer Intern</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>11 Sessions (27 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq5.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Srinivas Rao</h4>
+
+                  <h6>Senior Consultant</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>197 Sessions (247 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq1.webp" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Gourav Bhati</h4>
+
+                  <h6>Product Owner</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>07 Sessions (57 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq2.webp" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Bhavanesh Asar</h4>
+
+                  <h6>Enterprise architect</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>12 Sessions (107 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq3.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Tarun Gautam</h4>
+
+                  <h6>Business Analyst</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>102 Sessions (295 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq4.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Navya Chadha</h4>
+
+                  <h6>Software Engineer Intern</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>11 Sessions (27 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ghfghgfhg">
+              <div class="jghdfrg">
+                <div class="kmg"><img src="./images/qqq5.png" alt="" /></div>
+
+                <div class="dfhjbghfjgfgh22">
+                  <h4>Srinivas Rao</h4>
+
+                  <h6>Senior Consultant</h6>
+
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+
+                  <p>197 Sessions (247 Reviews)</p>
+
+                  <div class="kbfhgfgfg">
+                    <button class="btn-main">BOOK NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section7"
+        style="
+          background: url('images/bb2.webp') no-repeat;
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div class="container-fluid section-hor-gap py-5">
+          <div class="duieghrrr_content">
+            <div class="dskjdfhgdfgfgfd text-center">
+              <h2>
+                Breakthrough Your Career <br />
+                With <span>Knowledgeable </span> Experts
+              </h2>
+
+              <p class="mb-0">
+                We try to help you boost a secure career with our professional
+                <br />
+                experts. We are here to work with you on your educational
+                journey.
+              </p>
+            </div>
+
+            <div class="idcuhsewfrsedf mt-5">
+              <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8 col-sm-12">
+                  <div class="position-relative">
+                    <i class="fa-solid fa-envelopes-bulk position-absolute"></i>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter your email"
+                    />
+
+                    <button class="btn btn-main position-absolute">
+                      <span>CONNECT FOR FREE</span>
+                      <i
+                        class="fa-regular d-none position-absolute fa-paper-plane"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--buisness mentor filter responsive start-->
+
+    <div class="bm-res-filter uihdfnihre bg-white d-none" id="bmresfil">
+      <div class="grjueghr d-flex">
+        <div class="">
+          <div class="digerier-tabs-container">
+            <div
+              class="digerier-tab"
+              onclick="openTab(event, 'digerier-tab-1')"
+            >
+              Availability
+            </div>
+
+            <div
+              class="digerier-tab"
+              onclick="openTab(event, 'digerier-tab-2')"
+            >
+              Experience
+            </div>
+
+            <div
+              class="digerier-tab"
+              onclick="openTab(event, 'digerier-tab-3')"
+            >
+              Price Range (<i class="fa-solid fa-indian-rupee-sign"></i>)
+            </div>
+
+            <div
+              class="digerier-tab"
+              onclick="openTab(event, 'digerier-tab-4')"
+            >
+              Rating
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="digeiurr_right">
+            <div id="digerier-tab-1" class="digerier-tab-content active">
+              <div class="dieirherr_btn bhduebbuger">
+                <span class="cjdsuibfsdf_btn position-relative">
+                  <ul class="diugerbihr p-3 bg-white text-left mb-0">
+                    <h6>Mentors available within</h6>
+
+                    <div class="row dgeubr mt-3">
+                      <div class="col-lg-12 mb-2">
+                        <input type="radio" id="iyum" name="bhtwd" value="" />
+                        <label for="iyum">7 Days</label>
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input type="radio" id="lkui" name="bhtwd" value="" />
+                        <label for="lkui">14 Days</label>
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input type="radio" id="mghs" name="bhtwd" value="" />
+                        <label for="mghs">21 Days</label>
+                      </div>
+
+                      <div class="col-lg-12">
+                        <input type="radio" id="iuter" name="bhtwd" value="" />
+                        <label for="iuter">30 Days</label>
+                      </div>
+                    </div>
+                  </ul>
+                </span>
+              </div>
+            </div>
+
+            <div id="digerier-tab-2" class="digerier-tab-content">
+              <div class="dieirherr_btn bhduebbuger">
+                <span class="cjdsuibfsdf_btn position-relative">
+                  <ul
+                    class="diugerbihr idgheirr p-3 bg-white text-left"
+                    id="bm-filter-drpdwn2"
+                  >
+                    <h6>Mentors with the experience (Yrs) of</h6>
+
+                    <div class="row dgeubr mt-3">
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="rwer"
+                          name="ugduerre"
+                          value=""
+                        />
+                        <label for="rwer">3 - 5</label>
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="vdta"
+                          name="ugduerre"
+                          value=""
+                        />
+                        <label for="vdta">5 - 7</label>
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input type="radio" id="pde" name="ugduerre" value="" />
+                        <label for="pde">7 - 9</label>
+                      </div>
+
+                      <div class="col-lg-12">
+                        <input
+                          type="radio"
+                          id="nmbkjt"
+                          name="ugduerre"
+                          value=""
+                        />
+                        <label for="nmbkjt">9+</label>
+                      </div>
+                    </div>
+                  </ul>
+                </span>
+              </div>
+            </div>
+
+            <div id="digerier-tab-3" class="digerier-tab-content">
+              <div class="dieirherr_btn bhduebbuger">
+                <span class="cjdsuibfsdf_btn position-relative">
+                  <ul class="diugerbihr p-3 bg-white" id="bm-filter-drpdwn3">
+                    <div class="wrapper">
+                      <div class="price-input">
+                        <div class="field">
+                          <span>Min</span>
+                          <input type="number" class="input-min" value="2500" />
+                        </div>
+
+                        <div class="separator">-</div>
+
+                        <div class="field">
+                          <span>Max</span>
+                          <input type="number" class="input-max" value="7500" />
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </span>
+              </div>
+            </div>
+
+            <div id="digerier-tab-4" class="digerier-tab-content">
+              <div class="dieirherr_btn bhduebbuger">
+                <span class="cjdsuibfsdf_btn position-relative">
+                  <ul
+                    class="diugerbihr ohgiererr_list p-3 bg-white"
+                    id="bm-filter-drpdwn4"
+                  >
+                    <h6>Choose rating</h6>
+
+                    <div class="row dgeubr mt-3">
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="cdsgww"
+                          name="csrasdf"
+                          value=""
+                        />
+                        <label for="cdsgww"
+                          >1 (<i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="cdfrwae"
+                          name="csrasdf"
+                          value=""
+                        />
+                        <label for="cdfrwae"
+                          >2 (<i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="nhgssa"
+                          name="csrasdf"
+                          value=""
+                        />
+                        <label for="nhgssa"
+                          >3 (<i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+
+                      <div class="col-lg-12 mb-2">
+                        <input
+                          type="radio"
+                          id="gewrwr"
+                          name="csrasdf"
+                          value=""
+                        />
+                        <label for="gewrwr"
+                          >4 (<i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+
+                      <div class="col-lg-12">
+                        <input
+                          type="radio"
+                          id="ouiurt"
+                          name="csrasdf"
+                          value=""
+                        />
+                        <label for="ouiurt"
+                          >5 (<i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>)</label
+                        >
+                      </div>
+                    </div>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--buisness mentor filter responsive end-->
+
+    <footer class="section-hor-gap py-5 mt-5">
+      <div class="container-fluid pt-4">
+        <div class="jfuhygfdgdfrg">
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+              <div class="jdfhgdfg">
+                <h4 class="mb-4">About Us</h4>
+
+                <p>
+                  Providing solution-oriented guidance through the best mentors
+                  who have an immense amount of knowledge and experience in the
+                  specific field. We have discovered that the students struggle
+                  to gain expertise without proper guidance.
+                </p>
+
+                <p class="mb-0">
+                  Join us to transform your career and build an unimaginable
+                  path for you.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="jhdgfvdg">
+                <div class="row">
+                  <div class="col-lg-3 mb-4">
+                    <div class="hjgfgfghghgfh">
+                      <div class="fugjfgf mb-4">
+                        <h4>Navigation</h4>
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> Home</a
+                        >
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> IT
+                          Training</a
+                        >
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> Business
+                          Training</a
+                        >
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> Mentor
+                          Club</a
+                        >
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> Jobs</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 mb-4">
+                    <div class="hjgfgfghghgfh">
+                      <div class="fugjfgf mb-4">
+                        <h4>Useful Links</h4>
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> Contact Us</a
+                        >
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> About Us</a
+                        >
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> Blog</a
+                        >
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> Terms &
+                          Condition</a
+                        >
+                      </div>
+
+                      <div class="nbffg position-relative mb-3">
+                        <a href=""
+                          ><i class="fa-solid fa-angle-right"></i> Privacy &
+                          Policy</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="hjgfgfghghgfh">
+                      <div class="fugjfgf mb-4">
+                        <h4>Contact Us</h4>
+                      </div>
+
+                      <div class="nbffg2 mb-3">
+                        <a href="" class="d-flex">
+                          <i class="fa-solid pe-2 fa-location-arrow"></i>
+
+                          <p class="mb-0">
+                            B 1/5 Safdarjung Enclave Africa Avenue New Delhi
+                            Pin-110029
+                          </p>
+                        </a>
+                      </div>
+
+                      <div class="nbffg2 mb-3">
+                        <a href="" class="d-flex">
+                          <i class="fa-solid pe-2 fa-phone"></i>
+
+                          <p class="mb-0">(120) 3569310</p>
+                        </a>
+                      </div>
+
+                      <div class="nbffg2 mb-4">
+                        <a href="" class="d-flex">
+                          <i class="fa-solid pe-2 fa-envelope"></i>
+
+                          <p class="mb-0">wecare@practiwiz.com</p>
+                        </a>
+                      </div>
+
+                      <div class="bghjdfgfdg">
+                        <h4 class="mb-4">Follow Us</h4>
+
+                        <div class="ghfgdfgfgffgfg">
+                          <button class="position-relative me-lg-2">
+                            <i
+                              class="fa-brands position-absolute fa-facebook-f"
+                            ></i>
+                          </button>
+
+                          <button class="position-relative me-lg-2">
+                            <i
+                              class="fa-brands position-absolute fa-instagram"
+                            ></i>
+                          </button>
+
+                          <button class="position-relative me-lg-2">
+                            <i
+                              class="fa-brands position-absolute fa-linkedin-in"
+                            ></i>
+                          </button>
+
+                          <button class="position-relative me-lg-2">
+                            <i
+                              class="fa-brands position-absolute fa-x-twitter"
+                            ></i>
+                          </button>
+
+                          <button class="position-relative me-lg-2">
+                            <i
+                              class="fa-brands position-absolute fa-tiktok"
+                            ></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+      integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/global.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/slider.js"></script>
+
+    <script>
+      $(function () {
+        var btn = $(".search-button"),
+          val_length;
+        $("input").keyup(function () {
+          val_length = $(this).val().length;
+          if (val_length > 0) {
+            btn.addClass("typed");
+          } else {
+            btn.removeClass("typed");
+          }
+        });
+        btn.click(function () {
+          if (val_length > 0) {
+            $("input").val("").trigger("keyup").focus();
+          }
+        });
+      });
+    </script>
+
+    <!-- start typing  js  -->
+
+    <script>
+      // these phrases will repeat
+      const phrases = [
+        "Learn Data-driven Bussiness Insights",
+        // "This is a typing effect.",
+        // "You can change the phrases.",
+        // "Customize it as you like!"
+      ];
+
+      // start with initial random phrase from the collection
+      // Math.floor reduces float to integer
+      let currentPhrase = Math.floor(Math.random() * (phrases.length - 1));
+      let currentChar = 0;
+      // this element has the typing line
+      let typingLine = document.getElementById("typing");
+
+      // type() the phrase char-by-char
+      //
+      function type() {
+        // write sub-string to the element
+        typingLine.textContent = phrases[currentPhrase].slice(0, ++currentChar);
+
+        // continue to write until we run out of phrase-chars
+        if (currentChar < phrases[currentPhrase].length) {
+          // slow down the animation
+          setTimeout(function () {
+            // animates the changes to DOM
+            requestAnimationFrame(type);
+          }, 25);
+        } else {
+          // we ran out of phrase length
+          // now wait 2 seconds
+          // then call "erase" method to start erasing
+          setTimeout(erase, 2000);
+        }
+      }
+
+      // erase() characters one-by-one
+      //
+      function erase() {
+        // reduce one char, assign to the element
+        typingLine.textContent = phrases[currentPhrase].slice(0, --currentChar);
+
+        // we still have more chars to erase
+        if (currentChar > 0) {
+          // pause 25ms, then animate the element rendering
+          setTimeout(function () {
+            requestAnimationFrame(erase);
+          }, 25);
+        } else {
+          // we ran out of chars for current phrase
+          // reset to first char
+          currentChar = 0;
+          // move to the next phrase
+          // "%" ensures endless loop within phrases
+          currentPhrase = (currentPhrase + 1) % phrases.length;
+          // all erased? now start "typing" again
+          setTimeout(type, 1000);
+        }
+      }
+
+      // start the first "typing"
+      type();
+    </script>
+
+    <!-- end typing  js  -->
+
+    <!-- start tab content js -->
+    <script>
+      $(document).ready(function () {
+        $("ul.tabs li").click(function () {
+          var tab_id = $(this).attr("data-tab");
+
+          $("ul.tabs li").removeClass("current");
+          $(".tab-content").removeClass("current");
+
+          $(this).addClass("current");
+          $("#" + tab_id).addClass("current");
+        });
+      });
+    </script>
+
+    <script>
+      const tabsBtns = Array.from(document.querySelectorAll("[data-tab-id]"));
+      const tabs = Array.from(document.querySelectorAll("[data-tab]"));
+
+      let selectedTab = tabsBtns[0].dataset.tabId;
+
+      const hideTabs = () => {
+        tabs
+          .filter((tab) => tab.dataset.tab !== selectedTab)
+          .forEach((tab) => {
+            tab.classList.add("tabs__tab--hide");
+          });
+
+        tabsBtns
+          .filter((tab) => tab.dataset.tabId !== selectedTab)
+          .forEach((tab) => {
+            tab.classList.add("tabs__tab-btn--not-selected");
+          });
+      };
+      hideTabs();
+
+      const handleSelectTab = (e) => {
+        selectedTab = e.target.dataset.tabId;
+
+        tabs.forEach((tab) => {
+          tab.classList.remove("tabs__tab--hide");
+        });
+
+        tabsBtns.forEach((tab) => {
+          tab.classList.remove("tabs__tab-btn--not-selected");
+        });
+
+        hideTabs();
+      };
+
+      tabsBtns.forEach((btn) => {
+        btn.addEventListener("click", handleSelectTab);
+      });
+    </script>
+
+    <!-- end tab content js -->
+
+    <!--bm filter dropdown start-->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const bmFltrBtn = document.querySelector("#bmfltrbtn");
+        const bmFltrDrpdwn = document.querySelector("#bm-filter-drpdwn");
+
+        bmFltrBtn.addEventListener("click", function () {
+          if (bmFltrDrpdwn.classList.contains("d-none")) {
+            bmFltrDrpdwn.classList.remove("d-none");
+          } else {
+            bmFltrDrpdwn.classList.add("d-none");
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const bmFltrBtn2 = document.querySelector("#bmfltrbtn2");
+        const bmFltrDrpdwn2 = document.querySelector("#bm-filter-drpdwn2");
+
+        bmFltrBtn2.addEventListener("click", function () {
+          if (bmFltrDrpdwn2.classList.contains("d-none")) {
+            bmFltrDrpdwn2.classList.remove("d-none");
+          } else {
+            bmFltrDrpdwn2.classList.add("d-none");
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const bmFltrBtn3 = document.querySelector("#bmfltrbtn3");
+        const bmFltrDrpdwn3 = document.querySelector("#bm-filter-drpdwn3");
+
+        bmFltrBtn3.addEventListener("click", function () {
+          if (bmFltrDrpdwn3.classList.contains("d-none")) {
+            bmFltrDrpdwn3.classList.remove("d-none");
+          } else {
+            bmFltrDrpdwn3.classList.add("d-none");
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const bmFltrBtn4 = document.querySelector("#bmfltrbtn4");
+        const bmFltrDrpdwn4 = document.querySelector("#bm-filter-drpdwn4");
+
+        bmFltrBtn4.addEventListener("click", function () {
+          if (bmFltrDrpdwn4.classList.contains("d-none")) {
+            bmFltrDrpdwn4.classList.remove("d-none");
+          } else {
+            bmFltrDrpdwn4.classList.add("d-none");
+          }
+        });
+      });
+    </script>
+
+    <!--bm filter dropdown end-->
+
+    <!--bm filter responsive start-->
+
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("digerier-tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("digerier-tab");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      // Open the default tab on page load
+      document.getElementById("digerier-tab-1").style.display = "block";
+      document
+        .getElementsByClassName("digerier-tab")[0]
+        .classList.add("active");
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var bmFicclBtn = document.querySelector("#fuygernert");
+        var bmResFil = document.querySelector("#bmresfil");
+
+        bmFicclBtn.addEventListener("click", function () {
+          if (bmResFil.classList.contains("uihdfnihre")) {
+            bmResFil.classList.remove("uihdfnihre");
+          } else {
+            bmResFil.classList.add("uihdfnihre");
+          }
+        });
+      });
+    </script>
+
+    <!--bm filter responsive end-->
+  </body>
+</html>
